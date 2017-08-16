@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { timeEvent } from './timeEvent';
 
 
 // create a React component for each publication object
@@ -66,20 +67,20 @@ class App extends Component {
                     </div>
                     <div className="leftside tags">
                         <ul>
-                            <li><a href="#">Basic</a></li>
-                            <li><a href="#">Clinical</a></li>
-                            <li><a href="#">Engineering</a></li>
-                            <li><a href="#">Original Research</a></li>
-                            <li><a href="#">Collaborative</a></li>
-                            <li><a href="#">Case Reports</a></li>
-                            <li><a href="#">Book Chapters</a></li>
-                            <li><a href="#">Abstracts</a></li>
-                            <li><a href="#">Editorials</a></li>
-                            <li><a href="#">Posters</a></li>
-                            <li><a href="#">Proceeding Reports</a></li>
-                            <li><a href="#">Patients</a></li>
-                            <li><a href="#">Grants</a></li>
-                            <li><a href="#">Other</a></li>
+                            <li><button className="Basic">Basic</button></li>
+                            <li><button className="Clinical">Clinical</button></li>
+                            <li><button className="Engineering">Engineering</button></li>
+                            <li><button className="Original Research">Original Research</button></li>
+                            <li><button className="Collaborative">Collaborative</button></li>
+                            <li><button className="Case Reports">Case Reports</button></li>
+                            <li><button className="Abstracts">Abstracts</button></li>
+                            <li><button className="Book Chapters">Book Chapters</button></li>
+                            <li><button className="Editorials">Editorials</button></li>
+                            <li><button className="Posters">Posters</button></li>
+                            <li><button className="Proceeding Reports">Proceeding Reports</button></li>
+                            <li><button className="Patents">Patents</button></li>
+                            <li><button className="Grants">Grants</button></li>
+                            <li><button className="Other">Other</button></li>
                         </ul>
                     </div>
                 </div>
