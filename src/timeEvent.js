@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-export class timeEvent extends React.Component {
+
+export class TimeEvent extends Component {
     constructor( props ) {
-        super(props);
+        super();
+        this.props = props;
     }
     render() {
+        console.log(this.props);
         return (
-            <button
-                onClick={( e ) => {
-                    console.log('I am a working function!');
-                }}
-            >
-                {this.props.children}
-            </button>
+            <li>
+                <button
+                    onClick={( e ) => {
+                        console.log(this.props);
+                    }}
+                >
+                    {this.props.children}
+                </button>
+            </li>
         );
     }
 };
