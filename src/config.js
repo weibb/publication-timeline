@@ -94,5 +94,6 @@ export const config = {
         'Patents',
         'Grants',
         'Other',
+        'Butts',
     ],
 }

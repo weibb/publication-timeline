@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { config } from './config';
 
 export class Tags extends Component {
-    constructor() {
-        super();
-    }
+    // constructor() {
+    //     super();
+    // }
     render() {
 
         return (
             <ul>
-                {config.tags.map(function(tags, i){
-                    return <li>
+                {config.tags.map((tags, i) => (
+                    <li key={i}>
                         <button
                             onClick={( e ) => {
                             }}
@@ -18,7 +18,7 @@ export class Tags extends Component {
                             { tags }
                         </button>
                     </li>
-                })}
+                ))}
             </ul>
         );
     }
