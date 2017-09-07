@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { state } from './Actions';
 import { TimeEvent } from './TimeEvent';
 
 export class Timeline extends Component {
