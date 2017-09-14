@@ -80,11 +80,13 @@ export const config = {
         },
     ],
     categories: [
+        'all',
         'Basic',
         'Clinical',
         'Engineering',
     ],
     types: [
+        'all',
         'Original Research',
         'Collaborative',
         'Case Report',

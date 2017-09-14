@@ -22,7 +22,7 @@ export class Tags extends Component {
                                     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
                                 }).replace(/\s+/g, '');
                                 console.log( category );
-                                actions.sortCategory( category );
+                                actions.selectCategory( category );
                             }}
                         >
                             { categories }
@@ -38,7 +38,7 @@ export class Tags extends Component {
                                     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
                                 }).replace(/\s+/g, '');
                                 console.log( type );
-                                actions.sortType( type );
+                                actions.selectType( type );
                             }}
                         >
                             { types }

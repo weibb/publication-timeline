@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { config } from './config';
-export const state = {
+const state = {
     minYear: 1970,
     maxYear: 2017,
     years: [],
     taggedYears: [],
     matches: [],
+    type: 'all',
+    category: 'all',
 };
 
 export class Actions extends Component {
@@ -17,49 +19,66 @@ export class Actions extends Component {
         state.pub = config.pubs[config.pubs.length-1];
         console.log(state.pub);
     }
-    sortType( tag ) {
-        const pubs = config.pubs;
-        state.matches = [];
-        for( let i = 0; i < pubs.length; i++ ) {
-            const pub = pubs[ i ];
-            state.years.push(pub.date);
-            if( tag === 'all' ) {
-                state.matches.push( pub.id );
-                state.taggedYears.push(pub.date);
-            }
-            else {
-                for( let j = 0; j < pub.type.length; j++) {
-                    if( tag === pub.type[ j ] ) {
-                        state.matches.push( pub.id );
-                        state.taggedYears.push(pub.date);
-                    }
-                }
-            }
-        }
-        console.log(state);
+    selectType( tag ) {
+        state.type = tag;
+        state.matches = this.filter();
+        console.log( 'full matches: ' + state.matches.length );
+        console.log( state.matches );
     }
-    sortCategory( tag ) {
+    selectCategory( tag ) {
+        state.category = tag;
+        state.matches = this.filter();
+        console.log( 'full matches: ' + state.matches.length );
+        console.log( state.matches );
+    }
+    filter() {
         const pubs = config.pubs;
+        const type = state.type;
+        const category = state.category;
+        const typeMatch = [];
+        const fullMatch = [];
         state.matches = [];
-        for( let i = 0; i < pubs.length; i++ ) {
+        let i;
+        for( i = 0; i < pubs.length; i++ ) {
             const pub = pubs[ i ];
-            state.years.push(pub.date);
-            if( tag === 'all' ) {
-                state.matches.push( pub.id );
-                state.taggedYears.push(pub.date);
+            if( type === 'all' ) {
+                typeMatch.push( pub );
             }
             else {
                 for( let j = 0; j < pub.type.length; j++) {
-                    if( tag === pub.category[ j ] ) {
-                        state.matches.push( pub.id );
-                        state.taggedYears.push(pub.date);
+                    if( state.type === pub.type[ j ] ) {
+                        typeMatch.push( pub );
                     }
                 }
             }
         }
-        console.log(state);
+        console.log( 'type matches: ' + typeMatch.length );
+        //console.log( typeMatch[0].category );
+        if ( typeMatch.length === 0 ) {
+            return typeMatch;
+        }
+        else {
+            for( i = 0; i < typeMatch.length; i++ ) {
+                const pub2 = typeMatch[ i ];
+                if( category === 'all' ) {
+                    fullMatch.push( pub2 );
+                    state.taggedYears.push(pub2.date);
+                }
+                else {
+                    for( let k = 0; k < pub2.category.length; k++) {
+                        if( state.category === pub2.category[ k ] ) {
+                            fullMatch.push( pub2 );
+                            state.taggedYears.push(pub2.date);
+                        }
+                    }
+                }
+            }
+            return fullMatch;
+        }
     }
 }
+
+export {state};
 
 /*
 
