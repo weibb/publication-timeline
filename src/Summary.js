@@ -10,8 +10,9 @@ export class Summary extends Component {
     render() {
         console.log(this.props);
         let names = state.pub.authors[0].name;
-        if ( state.pub.authors[1] ) names += ', ' + state.pub.authors[1].name;
-        if ( state.pub.authors[2] ) names += ', ' + state.pub.authors[2].name;
+        const split = state.pub.authors[2] ? ', ' : ' & ';
+        if ( state.pub.authors[1] ) names += split + state.pub.authors[1].name;
+        if ( state.pub.authors[2] ) names += ' & ' + state.pub.authors[2].name;
         return (
             <div className="sidebar" id="summary">
                 <div className="rightside image">

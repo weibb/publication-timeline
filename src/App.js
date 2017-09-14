@@ -37,10 +37,16 @@ class App extends Component {
                     <div className="container" id="timeline">
                             <div className="row">
                                 <div id="years" className="row">
-                                    <div className="year" id="80s">1980s</div>
-                                    <div className="year" id="90s">1990s</div>
-                                    <div className="year" id="00s">2000s</div>
-                                    <div className="year" id="10s">2010s</div>
+                                    <div className="year" id="d0">0</div>
+                                    <div className="year" id="d10">1</div>
+                                    <div className="year" id="d20">2</div>
+                                    <div className="year" id="d30">3</div>
+                                    <div className="year" id="d40">4</div>
+                                    <div className="year" id="d50">5</div>
+                                    <div className="year" id="d60">6</div>
+                                    <div className="year" id="d70">7</div>
+                                    <div className="year" id="d80">8</div>
+                                    <div className="year" id="d90">9</div>
                                 </div>
                             </div>
                     </div>
