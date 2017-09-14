@@ -22,12 +22,14 @@ export class Actions extends Component {
     selectType( tag ) {
         state.type = tag;
         state.matches = this.filter();
+        this.getPubs();
         console.log( 'full matches: ' + state.matches.length );
         console.log( state.matches );
     }
     selectCategory( tag ) {
         state.category = tag;
         state.matches = this.filter();
+        this.getPubs();
         console.log( 'full matches: ' + state.matches.length );
         console.log( state.matches );
     }
@@ -74,6 +76,12 @@ export class Actions extends Component {
                 }
             }
             return fullMatch;
+        }
+    }
+    getPubs() {
+        const pubs = state.matches;
+        for ( let i = 0; i < pubs.length; i++ ){
+
         }
     }
 }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { config } from './config';
-import { state } from './Actions';
-import { Actions } from './Actions';
-
-const actions = new Actions;
 
 export class Tags extends Component {
-    // constructor() {
-    //     super();
-    // }
+    constructor( props ) {
+        super( props );
+        this.selectCategory = props.selectCategory;
+        this.selectType = props.selectType;
+        this.filter = props.filter;
+    }
+
     render() {
 
         return (
@@ -22,7 +22,7 @@ export class Tags extends Component {
                                     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
                                 }).replace(/\s+/g, '');
                                 console.log( category );
-                                actions.selectCategory( category );
+                                this.selectCategory( category );
                             }}
                         >
                             { categories }
@@ -38,7 +38,7 @@ export class Tags extends Component {
                                     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
                                 }).replace(/\s+/g, '');
                                 console.log( type );
-                                actions.selectType( type );
+                                this.selectType( type );
                             }}
                         >
                             { types }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import _ from 'lodash';
+
 import logo from './logo.svg';
 import './App.css';
 import { config } from './config';
@@ -8,16 +10,53 @@ import { TimeEvent } from './TimeEvent';
 import { Summary } from './Summary';
 import { Tags } from './Tags';
 
+const timeline = <Timeline />
+const startingState = {
+    config: config,
+    minYear: 1970,
+    maxYear: 2017,
+    years: [],
+    taggedYears: [],
+    matches: [],
+    type: 'all',
+    category: 'all',
+    pub: config.pubs.length-1,
+};
+
 const time1 = new TimeEvent({ id: 'sup', children: 'I have content' });
 time1.render();
 
 class App extends Component {
 
-    constructor( state ) {
+    constructor() {
         super();
-        App.state = state || {};
+        this.state = startingState;
+        this.filter = this.filter.bind( this );
+        this.selectType = this.selectType.bind( this );
+        this.selectCategory = this.selectCategory.bind( this );
+        this.getSummary = this.getSummary.bind( this );
+        this.showSummary = this.showSummary.bind( this );
     }
-
+    filter() {
+        const { pubs } = config;
+        const { type, category } = this.state;
+        return _.filter( pubs, ( pub ) => (
+            ( _.indexOf( pub.type, type ) !== -1 || type === 'all' ) &&
+            ( _.indexOf( pub.category, category ) !== -1 || category === 'all' )
+        ));
+    }
+    selectType( tag ) {
+        this.setState({ type: tag });
+    }
+    selectCategory( tag ) {
+        this.setState({ category: tag });
+    }
+    getSummary( id ) {
+        this.setState({ pub: id });
+    }
+    showSummary(){
+        return this.state.config.pubs[this.state.pub -1];
+    }
     render() {
         return (
             <div id="master">
@@ -31,27 +70,13 @@ class App extends Component {
                             <h3>MD, PhD</h3>
                             <h4>Johns Hopkins University</h4>
                         </div>
-                        <Tags />
+                        <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                     </div>
-
                     <div className="container" id="timeline">
-                            <div className="row">
-                                <div id="years" className="row">
-                                    <div className="year" id="d0">0</div>
-                                    <div className="year" id="d10">1</div>
-                                    <div className="year" id="d20">2</div>
-                                    <div className="year" id="d30">3</div>
-                                    <div className="year" id="d40">4</div>
-                                    <div className="year" id="d50">5</div>
-                                    <div className="year" id="d60">6</div>
-                                    <div className="year" id="d70">7</div>
-                                    <div className="year" id="d80">8</div>
-                                    <div className="year" id="d90">9</div>
-                                </div>
-                            </div>
+                        <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} />
                     </div>
                     <div id="summaryHolder">
-                        <Summary />
+                        <Summary pub={this.showSummary()} setState={this.setState} state={this.state}/>
                     </div>
                 </div>
             </div>
