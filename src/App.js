@@ -55,7 +55,7 @@ class App extends Component {
         this.setState({ pub: id });
     }
     showSummary(){
-        return this.state.config.pubs[this.state.pub -1];
+        return this.state.config.pubs[this.state.pub -1 ];
     }
     render() {
         return (
