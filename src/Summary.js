@@ -17,7 +17,7 @@ export class Summary extends Component {
         return (
             <div className="sidebar" id="summary">
                 <div className="rightside image">
-                    <img src="/img_greece.jpg" />
+                    <img src={pub.image} />
                 </div>
                 <div className="rightside title">
                     <Textfit mode="multi" style={{color: "#FFF"}}>

@@ -19,7 +19,7 @@ export const config = {
             type: ['caseReport', 'poster'],
             link: 'http://google.com',
             date: '2009',
-            image: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Circle_Logo.svg/1024px-Circle_Logo.svg.png',
+            image: '/media/1.png',
         },
         {
             id: 2,
@@ -37,7 +37,7 @@ export const config = {
             type: ['collaborativeResearch', 'abstract'],
             link: 'http://google.com',
             date: '2012',
-            image: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Circle_Logo.svg/1024px-Circle_Logo.svg.png',
+            image: './media/2.png',
         },
         {
             id: 3,
@@ -58,7 +58,7 @@ export const config = {
             type: ['collaborativeResearch', 'proceedingReport'],
             link: 'http://google.com',
             date: '2015',
-            image: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Circle_Logo.svg/1024px-Circle_Logo.svg.png',
+            image: '/media/3.png',
         },
         {
             id: 4,
@@ -76,7 +76,7 @@ export const config = {
             type: ['collaborativeResearch', 'abstract', 'caseReport'],
             link: 'http://google.com',
             date: '2015',
-            image: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Circle_Logo.svg/1024px-Circle_Logo.svg.png',
+            image: '/media/4.png',
         },
     ],
     categories: [
