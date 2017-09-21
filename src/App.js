@@ -41,8 +41,8 @@ class App extends Component {
         const { pubs } = config;
         const { type, category } = this.state;
         return _.filter( pubs, ( pub ) => (
-            ( _.indexOf( pub.type, type ) !== -1 || type === 'all' ) &&
-            ( _.indexOf( pub.category, category ) !== -1 || category === 'all' )
+            (  pub.type == type || type === 'all' ) &&
+            ( pub.category == category || category === 'all' )
         ));
     }
     selectType( tag ) {

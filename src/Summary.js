@@ -28,12 +28,8 @@ export class Summary extends Component {
                     <p> { names }
                     <br /> { pub.date }
                     <br /> { pub.publication }
-                    <br />{ pub.type.map((type, i) => (
-                        i < pub.type.length - 1 ? type + ', ' : type + ''
-                    ))}
-                    <br />{ pub.category.map((category, i) => (
-                        i < pub.category.length - 1 ? category + ', ' : category + ''
-                    ))}
+                    <br />{ pub.type }
+                    <br />{ pub.category }
                     </p>
                     <p><a href={ pub.link }>Read it Here →</a></p>
                 </div>

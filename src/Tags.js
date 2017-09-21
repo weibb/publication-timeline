@@ -18,9 +18,7 @@ export class Tags extends Component {
                     <li key={i}>
                         <button
                             onClick={( e ) => {
-                                let category = categories.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
-                                    return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
-                                }).replace(/\s+/g, '');
+                                let category = categories;
                                 console.log( category );
                                 this.selectCategory( category );
                             }}
@@ -34,9 +32,7 @@ export class Tags extends Component {
                     <li key={i}>
                         <button
                             onClick={( e ) => {
-                                let type = types.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
-                                    return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
-                                }).replace(/\s+/g, '');
+                                let type = types;
                                 console.log( type );
                                 this.selectType( type );
                             }}
