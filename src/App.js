@@ -60,24 +60,22 @@ class App extends Component {
     render() {
         return (
             <div id="master">
-                <div className="container">
-                    <div className="sidebar" id="profiler">
-                        <div className="leftside display-pic">
-                            <img src="img_greece.jpg" />
-                        </div>
-                        <div className="leftside person">
-                            <h2>Peter L. Gehlbach</h2>
-                            <h3>MD, PhD</h3>
-                            <h4>Johns Hopkins University</h4>
-                        </div>
-                        <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
+                <div className="sidebar" id="profiler">
+                    <div className="leftside display-pic">
+                        <img src="img_greece.jpg" />
                     </div>
-                    <div className="container" id="timeline">
-                        <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} />
+                    <div className="leftside person">
+                        <h2>Peter L. Gehlbach</h2>
+                        <h3>MD, PhD</h3>
+                        <h4>Johns Hopkins University</h4>
                     </div>
-                    <div id="summaryHolder">
-                        <Summary pub={this.showSummary()} setState={this.setState} state={this.state}/>
-                    </div>
+                    <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
+                </div>
+                <div className="container" id="timeline">
+                    <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} />
+                </div>
+                <div id="summaryHolder">
+                    <Summary pub={this.showSummary()} setState={this.setState} state={this.state}/>
                 </div>
             </div>
         );

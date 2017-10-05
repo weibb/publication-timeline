@@ -117,6 +117,11 @@ p {
 
 #profiler {
     background-color: #3B3432;
+    width: 15vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .leftside {
@@ -163,7 +168,9 @@ p {
 }
 #summaryHolder {
     width: 25vw;
-    right: -5px;
+    right: 0;
+    height: 100vh;
+    top: 0;
     position: absolute;
 }
 .rightside {
@@ -201,10 +208,15 @@ p {
     border-bottom: 1px dotted #000;
 }
 
+.container {
+    position: absolute;
+}
+
 /* timeline */
 
 #timeline{
-    height: 100vw;
+    height: 100vh;
+    top: 0;
     width: 60vw;
     left: 15vw;
     position: absolute;
@@ -218,8 +230,8 @@ p {
 .timeline {
     left: 0;
     position: absolute;
-    height: 100%;
-
+    width: 100%;
+    height: 100vh;
 }
 
 .year {
@@ -235,8 +247,8 @@ p {
 }
 
 .row {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     display: flex;
     background: orange;
     flex-direction: row;
@@ -245,31 +257,20 @@ p {
     align-items: stretch;
 }
 
-.entry {
-    height:10px;
-    width: 10px;
-    border-radius: 50%;
-    display: flex;
-    background: pink;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
 .year{
     height: 100%;
 }
-#timeline {
-    height: 100%;
-    width: 100%;
-}
-
 #timeline-inner {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     background: linear-gradient(to bottom left, #6e79df, #425bbc);
+    overflow: hidden;
+
+    padding: 20px;
 }
 
 #ruler {
@@ -277,14 +278,16 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 5%;
+    justify-content: space-evenly;
+    height: 8%;
     width: 100%;
     bottom: 0;
-    padding: 0 0 10px 0;
+
+    padding: 0 18px 20px 22px;
 }
 .measure {
     height: 2em;
-    width: 1em;
+    width: 0.5em;
     padding: 3px;
 }
 .tick {
@@ -312,6 +315,7 @@ li {
 #master {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 .year {
@@ -326,12 +330,14 @@ button.type, button.category {
     border: 0;
 }
 button.timeEvent {
-    background-color: #333333;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 35%);
+    background-color: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 60%);
     border: 0;
     border-radius: 50%;
-    width: 1em;
-    height: 1em;
+    width: 100%;
+    min-width: 0.5rem;
+    height: 100%;
+    min-height: 0.5rem;
     outline: none;
     padding: 0;
 }
