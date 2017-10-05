@@ -12,7 +12,7 @@ export class Tags extends Component {
     render() {
 
         return (
-            <ul>
+            <ul className="leftside">
                 <li key="title0"> Categories </li>
                 {config.categories.map((categories, i) => (
                     <li key={i}>
