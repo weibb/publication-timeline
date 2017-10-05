@@ -11,6 +11,7 @@ export class Timeline extends Component {
         if( this.props.matches && this.props.matches.length > 0) {
             const pubs = this.props.matches;
             const timeline = [];
+            const ruler = [];
             for( let year = 1970; year <= 2017; year += 1){
                 const pubsByYear = [];
                 pubs.map( event =>
@@ -20,11 +21,20 @@ export class Timeline extends Component {
                         }
                     }
                 );
-                let jsx = <div id={year} className='year'>{pubsByYear}</div>;
-                console.log(pubsByYear);
-                timeline.push(jsx);
+                let yearColumn = <div id={year} className='year'>{pubsByYear}</div>;
+                // console.log(pubsByYear);
+                timeline.push(yearColumn);
+                const name = year % 10 === 0 ? year.toString() : '';
+                const tick = year % 10 === 0 ? 'bigTick' : 'tick';
+                const yearMeasure = <div className='measure measure{year}'>
+                    <div className ={tick}></div>
+                    <p className = 'yearName'>{name}</p>
+                </div>
+                ruler.push(yearMeasure);
             }
-            return (<div id='timeline-inner'>{timeline}</div>);
+
+
+            return (<div className='timeline'><div id='timeline-inner'>{timeline}</div><div id='ruler'>{ruler}</div></div>);
         }
     }
 }
