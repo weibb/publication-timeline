@@ -19,19 +19,26 @@ export class Summary extends Component {
                 <div className="rightside image">
                     <img src={pub.image} />
                 </div>
-                <div className="rightside title">
-                    <Textfit mode="multi" style={{color: "#FFF"}}>
-                         { pub.title }
-                    </Textfit>
-                </div>
                 <div className="rightside info">
-                    <p> { names }
-                    <br /> { pub.date }
-                    <br /> { pub.publication }
-                    <br />{ pub.type }
-                    <br />{ pub.category }
-                    </p>
-                    <p><a href={ pub.link }>Read it Here →</a></p>
+                    <div className="rightside title">
+                            <div className="title-inside title-inside1">
+                                <Textfit mode="multi" style={{color: "#FFF"}}>
+                                    <h1>
+                                        { pub.title }
+                                    </h1>
+                                </Textfit>
+                            </div>
+                                <div className="title-inside">
+                                <br />
+                                <p> { names }
+                                <br /> { pub.date }
+                                <br /> { pub.publication }
+                                <br />{ pub.type }
+                                <br />{ pub.category }
+                                </p>
+                                <p><a href={ pub.link }>Read it Here →</a></p>
+                            </div>
+                    </div>
                 </div>
             </div>
         );

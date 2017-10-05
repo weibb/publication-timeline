@@ -159,6 +159,7 @@ p {
 #summary {
     background-color: orange;
     width: 100%;
+    box-shadow: -7px 0px 15px rgba(0, 0, 0, 0.3);
 }
 #summaryHolder {
     width: 25vw;
@@ -169,26 +170,35 @@ p {
     width: 100%;
     padding: 1.1rem;
 }
+
 .image {
     height: 25vh;
     padding: 0;
+    border: 12px solid #000;
 }
 
 .image img {
     object-fit: cover;
-    width: 20rem;
-    height: 25vh;
-}
-
-.title {
-    height: 50vh;
-    padding: 2%;
-    background-color: pink;
 }
 
 .info {
-    height: 25vh;
-    background-color: purple;
+    border: 12px solid #000;
+    border-top: none;
+    height: 75vh;
+}
+
+.title {
+    height: 100%;
+    padding: 0px;
+}
+
+.title-inside {
+    padding-bottom: 2%;
+}
+
+.title-inside1 {
+    padding-bottom: 6%;
+    border-bottom: 1px dotted #000;
 }
 
 /* timeline */
