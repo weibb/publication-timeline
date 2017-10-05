@@ -11,6 +11,7 @@ export class TimeEvent extends Component {
         return (
             <li>
                 <button
+                    className="timeEvent"
                     onClick={( e ) => {
                         console.log(this.props.id);
                         this.getSummary(this.props.id);
