@@ -236,6 +236,7 @@ p {
 
 .year {
     height: 10%;
+    min-width: 12px;
     display: flex;
     border: 5px;
     border-color: black;
@@ -244,6 +245,7 @@ p {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+
 }
 
 .row {
@@ -268,13 +270,14 @@ p {
     align-items: center;
     justify-content: space-evenly;
     background: linear-gradient(to bottom left, #6e79df, #425bbc);
-    overflow: hidden;
+    overflow: scroll;
 
     padding: 20px;
 }
 
 #ruler {
     position: absolute;
+    overflow-y: scroll;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -289,6 +292,7 @@ p {
     height: 2em;
     width: 0.5em;
     padding: 3px;
+    min-width: 12px;
 }
 .tick {
     width: 1px;
