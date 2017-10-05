@@ -17,6 +17,7 @@ export class Tags extends Component {
                 {config.categories.map((categories, i) => (
                     <li key={i}>
                         <button
+                            className="category"
                             onClick={( e ) => {
                                 let category = categories;
                                 console.log( category );
@@ -31,6 +32,7 @@ export class Tags extends Component {
                 {config.types.map((types, i) => (
                     <li key={i}>
                         <button
+                            className="type"
                             onClick={( e ) => {
                                 let type = types;
                                 console.log( type );

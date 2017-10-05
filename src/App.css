@@ -107,6 +107,7 @@ p {
 }
 
 .sidebar {
+
     height: 100vh;
     padding: 0;
     border: 0;
@@ -115,12 +116,16 @@ p {
 /* left side */
 
 #profiler {
-    background-color: orange;
+    background-color: #3B3432;
 }
 
 .leftside {
     width: 12rem;
     padding: 1rem;
+}
+
+.leftside h2, .leftside h3 {
+    font-weight: normal;
 }
 
 .display-pic {
@@ -134,12 +139,12 @@ p {
 
 .person {
     height: 30vh;
-    background-color: red;
+    background-color: #3B3432;
 }
 
 .tags {
     height: 55vh;
-    background-color: green;
+    background: linear-gradient (to top right, #6e79df, #425bbc);
     overflow-y: scroll;
 }
 
@@ -153,10 +158,15 @@ p {
 
 #summary {
     background-color: orange;
+    width: 100%;
 }
-
+#summaryHolder {
+    width: 25vw;
+    right: -5px;
+    position: absolute;
+}
 .rightside {
-    width: 20rem;
+    width: 100%;
     padding: 1.1rem;
 }
 .image {
@@ -200,7 +210,7 @@ p {
     display: flex;
     border: 5px;
     border-color: black;
-    background: green;
+    background-color: rgba(255, 0, 0, 0);
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -242,8 +252,49 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background: linear-gradient(to bottom left, #6e79df, #425bbc);
 }
 
 li {
     list-style: none  !important;
+}
+
+#master {
+    height: 100vh;
+    width: 100vw;
+}
+
+.year {
+    padding: 3px;
+}
+button.type, button.category {
+    background-color: rgba(255, 255, 255, 0);
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    outline: none;
+    border: 0;
+}
+button.timeEvent {
+    background-color: #333333;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 35%);
+    border: 0;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    outline: none;
+}
+@media (max-width: 1023px) {
+    #timeline {
+        flex-direction: column;
+    }
+    #timeline-inner {
+        flex-direction: column-reverse;
+    }
+    .year {
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+    }
+
 }
