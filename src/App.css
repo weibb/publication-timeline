@@ -284,7 +284,7 @@ button.timeEvent {
     height: 1em;
     outline: none;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1100px) {
     #timeline {
         flex-direction: column;
     }
