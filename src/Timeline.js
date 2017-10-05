@@ -16,7 +16,7 @@ export class Timeline extends Component {
                 pubs.map( event =>
                     {
                         if (event.date == year){
-                            pubsByYear.push(<TimeEvent id={event.id} className='timeEvent' getSummary={this.getSummary} />)
+                            pubsByYear.push(<TimeEvent id={event.id + 1} className='timeEvent' getSummary={this.getSummary} />)
                         }
                     }
                 );
