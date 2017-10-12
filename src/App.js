@@ -60,15 +60,7 @@ class App extends Component {
     render() {
         return (
             <div id="master">
-                <div className="sidebar" id="profiler">
-                    <div className="leftside display-pic">
-                        <img src="img_greece.jpg" />
-                    </div>
-                    <div className="leftside person">
-                        <h2>Peter L. Gehlbach</h2>
-                        <h3>MD, PhD</h3>
-                        <h4>Johns Hopkins University</h4>
-                    </div>
+                <div>
                     <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                 </div>
                 <div className="container" id="timeline">
