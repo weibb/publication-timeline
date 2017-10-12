@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { config } from './config';
+import { Textfit } from 'react-textfit';
 
 export class Tags extends Component {
     constructor( props ) {
@@ -14,12 +15,15 @@ export class Tags extends Component {
         return (
             <div className="sidebar" id="profiler">
                 <div className="leftside display-pic">
-                    <img alt="bio_image" src="img_greece.jpg" />
+                    <img alt="bio_image" src={config.author.photo} />
                 </div>
                 <div className="leftside person">
-                    <h2>Peter L. Gehlbach</h2>
-                    <h3>MD, PhD</h3>
-                    <h4>Johns Hopkins University</h4>
+                    <Textfit mode="multi" style={{color: "#FFF"}}>
+                        <h2>{config.author.displayName}</h2>
+                        <h3>{config.author.degrees}</h3>
+                        <h4>{config.author.institution}</h4>
+                    </Textfit>
+
                 </div>
                 <ul className="leftside">
                     <li key="title0"> Categories </li>
