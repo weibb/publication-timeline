@@ -54,6 +54,7 @@ ul {
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    font-size: 1.75rem;
     color: rgba(255, 255, 255, 1);
     padding: 0;
     margin: 0;
@@ -117,7 +118,7 @@ p {
 
 #profiler {
     background-color: #3B3432;
-    width: 15vw;
+    width: 12rem;
     height: 100vh;
     left: 0;
     top: 0;
@@ -125,7 +126,7 @@ p {
 }
 
 .leftside {
-    width: 15vw;
+    width: 12rem;
     padding: 1rem;
 }
 
@@ -163,11 +164,11 @@ p {
 
 #summary {
     background-color: orange;
-    width: 100%;
+    width: inherit;
     box-shadow: -7px 0px 15px rgba(0, 0, 0, 0.3);
 }
 #summaryHolder {
-    width: 25vw;
+    width: 20rem;
     right: 0;
     height: 100vh;
     top: 0;
@@ -217,8 +218,8 @@ p {
 #timeline{
     height: 100vh;
     top: 0;
-    width: 60vw;
-    left: 15vw;
+    width: inherit;
+/*    left: 15vw; */
     position: absolute;
     display: flex;
     background: purple;

@@ -34,7 +34,15 @@ export class Timeline extends Component {
             }
 
 
-            return (<div className='timeline'><div id='timeline-inner'>{timeline}</div><div id='ruler'>{ruler}</div></div>);
+            return (<div className='timeline'>
+                        <div id='timeline-inner'>
+                            {timeline}
+                        </div>
+                        <div id='ruler'>
+                            {ruler}
+                        </div>
+                    </div>
+                );
         }
     }
 }
