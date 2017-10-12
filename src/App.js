@@ -59,16 +59,10 @@ class App extends Component {
     }
     render() {
         return (
-            <div id="master">
-                <div>
+            <div className="container">
                     <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
-                </div>
-                <div className="container" id="timeline">
                     <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} />
-                </div>
-                <div id="summaryHolder">
                     <Summary pub={this.showSummary()} setState={this.setState} state={this.state}/>
-                </div>
             </div>
         );
     }
