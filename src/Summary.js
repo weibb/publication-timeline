@@ -33,8 +33,7 @@ export class Summary extends Component {
                                 <p> { names }
                                 <br /> { pub.date }
                                 <br /> { pub.publication }
-                                <br />{ pub.type }
-                                <br />{ pub.category }
+                                <br />{ pub.type } { pub.category }
                                 </p>
                                 <p><a href={ pub.link }>Read it Here →</a></p>
                             </div>
