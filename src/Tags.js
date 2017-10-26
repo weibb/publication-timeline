@@ -20,12 +20,7 @@ export class Tags extends Component {
         return (
             <div className="sidebar" id="profiler">
                 <div className="leftside display-pic">
-                    <ImageLoader
-                       src="2.png"
-                       wrapper={React.DOM.div}
-                       preloader={preloader}>
-                       Image load failed!
-                     </ImageLoader>
+                    <img alt='focus image' src={config.author.image} />
                 </div>
                 <div className="leftside person">
                     <h2>{config.author.displayName}</h2>

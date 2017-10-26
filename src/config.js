@@ -7,7 +7,7 @@ export const config = {
         displayName: 'Peter L. Gehlbach',
         degrees: 'MD, PhD',
         institution: 'Johns Hopkins University',
-        photo: img,
+        image: img,
     },
     pubs: pubs,
     categories: [
