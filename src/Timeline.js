@@ -34,7 +34,7 @@ export class Timeline extends Component {
             }
 
 
-            return (<div className='timeline'>
+            return (<div className="container" className='timeline'>
                         <div id='timeline-inner'>
                             {timeline}
                         </div>

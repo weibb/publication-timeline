@@ -18,14 +18,11 @@ export class Tags extends Component {
                     <img alt="bio_image" src={config.author.photo} />
                 </div>
                 <div className="leftside person">
-                    <Textfit mode="single" style={{color: "#FFF"}}>
-                        <h2>{config.author.displayName}</h2>
-                        <h3>{config.author.degrees}</h3>
-                        <h4>{config.author.institution}</h4>
-                    </Textfit>
-
+                    <h2>{config.author.displayName}</h2>
+                    <h3>{config.author.degrees}</h3>
+                    <h4>{config.author.institution}</h4>
                 </div>
-                <ul className="leftside">
+                <ul className="leftside tags">
                     <li key="title0"> Categories </li>
                     {config.categories.map((categories, i) => (
                         <li key={i}>
