@@ -1,4 +1,5 @@
 import { pubs } from './data';
+import img from './2.png';
 console.log(pubs);
 export const config = {
     author: {
@@ -6,7 +7,7 @@ export const config = {
         displayName: 'Peter L. Gehlbach',
         degrees: 'MD, PhD',
         institution: 'Johns Hopkins University',
-        photo: "/media/2.png",
+        photo: img,
     },
     pubs: pubs,
     categories: [
