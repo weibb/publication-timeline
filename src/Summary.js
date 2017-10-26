@@ -14,11 +14,13 @@ export class Summary extends Component {
         const split = pub.authors[2] ? ', ' : ' & ';
         if ( pub.authors[1] ) names += split + pub.authors[1].name;
         if ( pub.authors[2] ) names += ' & ' + pub.authors[2].name;
+        const imgStyle = {
+            backgroundImage: 'url(' + pub.image + ')',
+            'objectFit': 'cover',
+        }
         return (
             <div className="sidebar" id="summary">
-                <div className="rightside image">
-                    <img src={pub.image} />
-                </div>
+                <div className="rightside image" style={imgStyle} />
                 <div className="rightside info">
                     <div className="rightside title">
                             <div className="title-inside title-inside1">
