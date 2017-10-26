@@ -163,11 +163,10 @@ p {
     background: rgba(222, 244, 244, 1);
     width: inherit;
     box-shadow: -7px 0px 15px rgba(0, 0, 0, 0.3);
-    width: 28rem;
+    width: 19rem;
     height: 100vh;
 }
 .rightside {
-    width: 100%;
     padding: 1.1rem;
 }
 
@@ -186,6 +185,7 @@ p {
     border-top: none;
     height: 75vh;
     overflow-y: scroll;
+    width: 19rem;
 }
 
 .title {
