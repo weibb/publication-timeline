@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Textfit } from 'react-textfit';
 
-export class Summary extends Component {
+export class OldSummary extends Component {
     constructor( props ) {
         super( props );
         this.state = props.state;
