@@ -8,7 +8,6 @@ import { config } from './config';
 import { Timeline } from './Timeline';
 import { TimeEvent } from './TimeEvent';
 import { Summary } from './Summary';
-import { OldSummary } from './OldSummary';
 import { Tags } from './Tags';
 
 const timeline = <Timeline />
@@ -77,7 +76,7 @@ class App extends Component {
                 <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                 <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} getOldSummary={this.getOldSummary} />
                 <Summary pub={this.showSummary()} setState={this.setState} state={this.state} style={ style } />
-                <OldSummary pub={this.showOldSummary()} setState={this.setState} state={this.state} />
+                <Summary pub={this.showOldSummary()} setState={this.setState} state={this.state} />
             </div>
         );
     }
