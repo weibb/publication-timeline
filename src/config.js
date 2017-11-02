@@ -1,6 +1,5 @@
 import { pubs } from './data';
 import img from './2.png';
-console.log(pubs);
 export const config = {
     author: {
         creditName: 'Gehlbach PL',

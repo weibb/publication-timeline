@@ -1,12 +1,33 @@
 import React, { Component } from 'react';
 import { TimeEvent } from './TimeEvent';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export class Timeline extends Component {
     constructor( props ) {
         super( props );
         this.state = props.state;
         this.getSummary = props.getSummary;
+        this.getOldSummary = props.getOldSummary;
+
+        this.state.items = [];
+        const pubs = this.state.config.pubs;
+        pubs.map(event => {
+            const key = event.id + 1;
+            this.state.items.push(key);
+        })
     }
+    handleAdd() {
+        const newItems = this.state.items.concat([
+        prompt('Enter some text')
+        ]);
+        this.setState({items: newItems});
+    }
+
+  handleRemove(i) {
+    let newItems = this.state.items.slice();
+    newItems.splice(i, 1);
+    this.setState({items: newItems});
+  }
     render(){
         if( this.props.matches && this.props.matches.length > 0) {
             const pubs = this.props.matches;
@@ -17,7 +38,7 @@ export class Timeline extends Component {
                 pubs.map( event =>
                     {
                         if (event.date == year){
-                            pubsByYear.push(<TimeEvent id={event.id + 1} className='timeEvent' getSummary={this.getSummary} />)
+                            pubsByYear.push(<TimeEvent id={event.id + 1} key={event.id + 1} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
                         }
                     }
                 );
