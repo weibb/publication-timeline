@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import _ from 'lodash';
 
 import logo from './logo.svg';
-import './App.css';
 import { config } from './config';
 import { Timeline } from './Timeline';
 import { TimeEvent } from './TimeEvent';
 import { Summary } from './Summary';
 import { Tags } from './Tags';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import './App.css';
 
 const timeline = <Timeline />
 const startingState = {
@@ -88,9 +88,14 @@ class App extends Component {
                 <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                 <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} getOldSummary={this.getOldSummary} />
                 <ReactCSSTransitionGroup
-                    transitionName="example"
+                    transitionName={ {
+                        enter: 'enter',
+                        leave: 'peace',
+                        appear: 'appear'
+                      } }
                     transitionEnterTimeout={1500}
-                    transitionLeaveTimeout={1300}>
+                    transitionLeave = {true}
+                    transitionLeaveTimeout={1500}>
                     {items}
                 </ReactCSSTransitionGroup>
             </div>

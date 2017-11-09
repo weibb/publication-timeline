@@ -23,22 +23,26 @@
 
 /* ReactCSSTransitionGroup custom styles */
 
-.example-enter {
-  transform: translateY(-100%);
+.enter {
+  transform: translateY(-100%) !important;
+  opacity: 1 !important;
 }
 
-.example-enter.example-enter-active {
-  transform: translateY(0%);
-  transition: opacity 500ms ease-in;
+.enter.enter-active {
+  transform: translateY(0%) !important;
+  transition: transform 1500ms ease 0s !important;
+  opacity: 1 !important;
 }
 
-.example-leave {
-  opacity: 1;
+.peace {
+    transform: translateY(-100%) !important;
+    opacity: 1 !important;
 }
 
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.peace.peace-active {
+  transform: translateY(0%) !important;
+  transition: transform 1500ms ease 0s !important;
+  opacity: 1 !important;
 }
 
 /* global */
@@ -187,6 +191,7 @@ p {
 }
 .rightside {
     padding: 1.1rem;
+    top: 0;
 }
 
 .image {
