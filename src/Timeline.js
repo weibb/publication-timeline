@@ -37,8 +37,9 @@ export class Timeline extends Component {
                 const pubsByYear = [];
                 pubs.map( event =>
                     {
+                        const match = event.match ? true : false;
                         if (event.date == year){
-                            pubsByYear.push(<TimeEvent id={(event.id + 1).toString()} key={event.id + 1} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
+                            pubsByYear.push(<TimeEvent id={(event.id + 1).toString()} key={event.id + 1} match={match} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
                         }
                     }
                 );

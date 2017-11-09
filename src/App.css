@@ -375,8 +375,14 @@ button.timeEvent {
     min-height: 0.5rem;
     outline: none;
     padding: 0;
+    transition: all 1s;
 }
-
+button.timeEvent.no-match {
+    opacity: 0.2;
+}
+button.timeEvent.match {
+    opacity: 1;
+}
 /*
 @media (max-width: 1100px) {
     #timeline, #ruler {

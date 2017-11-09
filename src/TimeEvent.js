@@ -10,11 +10,12 @@ export class TimeEvent extends Component {
         this.getOldSummary = props.getOldSummary;
     }
     render() {
+        const className = this.props.match ? 'timeEvent match' : 'timeEvent no-match';
         return (
             <li>
                 {this.props.value}
                 <button
-                    className="timeEvent"
+                    className={className}
                     onClick={( e ) => {
                         const self = this;
                         this.getSummary(this.props.id);

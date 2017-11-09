@@ -45,10 +45,17 @@ class App extends Component {
     filter() {
         const { pubs } = config;
         const { type, category } = this.state;
-        return _.filter( pubs, ( pub ) => (
-            (  pub.type == type || type === 'all' ) &&
-            ( pub.category == category || category === 'all' )
-        ));
+        pubs.map (( pub ) => {
+            if ((  pub.type == type || type === 'all' ) &&
+            ( pub.category == category || category === 'all' )) {
+                pub.match = true;
+            }
+            else {
+                pub.match = false;
+            }
+        });
+        console.log(pubs);
+        return pubs;
     }
     selectType( tag ) {
         this.setState({ type: tag });
