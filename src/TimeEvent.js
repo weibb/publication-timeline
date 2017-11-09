@@ -21,7 +21,6 @@ export class TimeEvent extends Component {
                         this.getSummary(this.props.id);
                         setTimeout(( e ) => {
                             this.getOldSummary(this.props.id);
-                            console.log('backed up summary');
                         }, 2000);
 
                     }}

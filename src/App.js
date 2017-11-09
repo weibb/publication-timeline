@@ -54,7 +54,6 @@ class App extends Component {
                 pub.match = false;
             }
         });
-        console.log(pubs);
         return pubs;
     }
     selectType( tag ) {
@@ -66,8 +65,6 @@ class App extends Component {
     getSummary( id ) {
         this.setState({ pub: id });
         this.setState({ items: [ this.state.pub ]});
-        console.log(this.state.items);
-        console.log(this.state.pub);
         // animation
     }
     getOldSummary( id ) {
@@ -84,7 +81,7 @@ class App extends Component {
     render() {
         const style = { left: '60%', };
         const items = this.state.items.map((item, i) => (
-            <Summary key={item} pub={this.showSummary()} setState={this.setState} state={this.state} />
+            <Summary key={item} pub={this.state.config.pubs[this.state.pub -1 ]} setState={this.setState} state={this.state} />
         ));
         return (
             <div id="container">
