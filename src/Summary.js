@@ -5,8 +5,6 @@ export class Summary extends Component {
     constructor( props ) {
         super( props );
         this.state = props.state;
-        console.log( '!!! ');
-        console.log( props.state );
         this.events = props.events;
     }
 
