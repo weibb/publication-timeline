@@ -38,11 +38,13 @@ export class Timeline extends Component {
                 pubs.map( event =>
                     {
                         if (event.date == year){
-                            pubsByYear.push(<TimeEvent id={event.id + 1} key={event.id + 1} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
+                            pubsByYear.push(<TimeEvent id={(event.id + 1).toString()} key={event.id + 1} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
                         }
                     }
                 );
-                let yearColumn = <div id={year} className='year'>{pubsByYear}</div>;
+                let yearColumn = <div id={year} className='year'>
+                    {pubsByYear}
+                </div>
                 // console.log(pubsByYear);
                 timeline.push(yearColumn);
                 const name = year % 10 === 0 ? year.toString() : '';

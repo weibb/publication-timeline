@@ -9,6 +9,7 @@ import { Timeline } from './Timeline';
 import { TimeEvent } from './TimeEvent';
 import { Summary } from './Summary';
 import { Tags } from './Tags';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const timeline = <Timeline />
 const startingState = {
@@ -32,6 +33,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = startingState;
+        this.state.items = [ this.state.pub ];
         this.filter = this.filter.bind( this );
         this.selectType = this.selectType.bind( this );
         this.selectCategory = this.selectCategory.bind( this );
@@ -56,6 +58,9 @@ class App extends Component {
     }
     getSummary( id ) {
         this.setState({ pub: id });
+        this.setState({ items: [ this.state.pub ]});
+        console.log(this.state.items);
+        console.log(this.state.pub);
         // animation
     }
     getOldSummary( id ) {
@@ -71,12 +76,19 @@ class App extends Component {
     }
     render() {
         const style = { left: '60%', };
+        const items = this.state.items.map((item, i) => (
+            <Summary key={item} pub={this.showSummary()} setState={this.setState} state={this.state} />
+        ));
         return (
             <div id="container">
                 <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                 <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} getOldSummary={this.getOldSummary} />
-                <Summary pub={this.showSummary()} setState={this.setState} state={this.state} style={ style } />
-                <Summary pub={this.showOldSummary()} setState={this.setState} state={this.state} />
+                <ReactCSSTransitionGroup
+                    transitionName="example"
+                    transitionEnterTimeout={1500}
+                    transitionLeaveTimeout={1300}>
+                    {items}
+                </ReactCSSTransitionGroup>
             </div>
         );
     }

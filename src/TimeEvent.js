@@ -5,12 +5,14 @@ export class TimeEvent extends Component {
     constructor( props ) {
         super( props );
         this.props = props;
+        this.id = props.id;
         this.getSummary = props.getSummary;
         this.getOldSummary = props.getOldSummary;
     }
     render() {
         return (
             <li>
+                {this.props.value}
                 <button
                     className="timeEvent"
                     onClick={( e ) => {
