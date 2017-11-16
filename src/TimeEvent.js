@@ -19,9 +19,6 @@ export class TimeEvent extends Component {
                     onClick={( e ) => {
                         const self = this;
                         this.getSummary(this.props.id);
-                        setTimeout(( e ) => {
-                            this.getOldSummary(this.props.id);
-                        }, 2000);
 
                     }}
                 >

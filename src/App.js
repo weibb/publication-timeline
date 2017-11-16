@@ -64,8 +64,6 @@ class App extends Component {
     }
     getSummary( id ) {
         this.setState({ pub: id });
-        this.setState({ items: [ this.state.pub ]});
-        // animation
     }
     getOldSummary( id ) {
         this.setState({ oldPub: id });
@@ -80,9 +78,9 @@ class App extends Component {
     }
     render() {
         const style = { left: '60%', };
-        const items = this.state.items.map((item, i) => (
-            <Summary key={item} pub={this.state.config.pubs[this.state.pub -1 ]} setState={this.setState} state={this.state} />
-        ));
+        const items = [
+            <Summary key={this.state.pub} pub={this.state.config.pubs[this.state.pub -1 ]} setState={this.setState} state={this.state} />
+        ];
         return (
             <div id="container">
                 <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
