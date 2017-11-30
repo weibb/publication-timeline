@@ -13,10 +13,16 @@ export class Tags extends Component {
         this.selectCategory = props.selectCategory;
         this.selectType = props.selectType;
         this.filter = props.filter;
+        this.state = props.state;
     }
 
     render() {
-
+        const categoryMatch = config.categories.map((category, i) => (
+            category === this.props.category ? "category selected" : "category"
+        ));
+        const typeMatch = config.types.map((type, i) => (
+            type === this.props.type ? "type selected" : "type"
+        ));
         return (
             <div className="sidebar" id="profiler">
                 <div className="leftside display-pic">
@@ -29,17 +35,16 @@ export class Tags extends Component {
                 </div>
                 <ul className="leftside tags">
                     <li key="title0"> Categories </li>
-                    {config.categories.map((categories, i) => (
+                    {config.categories.map((category, i) => (
                         <li key={i}>
                             <button
-                                className="category"
+                                className={categoryMatch[i]}
                                 onClick={( e ) => {
-                                    let category = categories;
                                     console.log( category );
                                     this.selectCategory( category );
                                 }}
                             >
-                                { categories }
+                                { category }
                             </button>
                         </li>
                     ))}
@@ -47,7 +52,7 @@ export class Tags extends Component {
                     {config.types.map((types, i) => (
                         <li key={i}>
                             <button
-                                className="type"
+                                className={typeMatch[i]}
                                 onClick={( e ) => {
                                     let type = types;
                                     console.log( type );

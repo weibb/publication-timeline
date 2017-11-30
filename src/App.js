@@ -37,7 +37,6 @@ class App extends Component {
         this.selectType = this.selectType.bind( this );
         this.selectCategory = this.selectCategory.bind( this );
         this.getSummary = this.getSummary.bind( this );
-        this.showSummary = this.showSummary.bind( this );
     }
     filter() {
         const { pubs } = config;
@@ -58,13 +57,10 @@ class App extends Component {
     }
     selectCategory( tag ) {
         this.setState({ category: tag });
+        console.log(this.state.category);
     }
     getSummary( id ) {
         this.setState({ pub: id });
-    }
-    showSummary(){
-        console.log('called showSummary');
-        return this.state.config.pubs[this.state.pub -1 ];
     }
     render() {
         const style = { left: '60%', };
@@ -73,7 +69,7 @@ class App extends Component {
         ];
         return (
             <div id="container">
-                <Tags selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
+                <Tags type={this.state.type} state={this.state} category={this.state.category} selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                 <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} />
                 <ReactCSSTransitionGroup
                     transitionName={ {
