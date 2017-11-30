@@ -7,7 +7,6 @@ export class Timeline extends Component {
         super( props );
         this.state = props.state;
         this.getSummary = props.getSummary;
-        this.getOldSummary = props.getOldSummary;
 
         this.state.items = [];
         const pubs = this.state.config.pubs;
@@ -29,7 +28,6 @@ export class Timeline extends Component {
     this.setState({items: newItems});
   }
     render(){
-        if( this.props.matches && this.props.matches.length > 0) {
             const pubs = this.props.matches;
             const timeline = [];
             const ruler = [];
@@ -67,6 +65,5 @@ export class Timeline extends Component {
                         </div>
                     </div>
                 );
-        }
     }
 }

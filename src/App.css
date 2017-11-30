@@ -369,6 +369,12 @@ button.type, button.category {
     outline: none;
     border: 0;
 }
+button.type.selected, button.category.selected {
+    background-color: black;
+}
+button.type.unselected, button.category.unselected {
+    background-color: rgba(255, 255, 255, 0);
+}
 button.timeEvent {
     background-color: #ffffff;
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 60%);
