@@ -63,7 +63,6 @@ class App extends Component {
         this.setState({ pub: id });
     }
     render() {
-        const style = { left: '60%', };
         const items = [
             <Summary key={this.state.pub} pub={this.state.config.pubs[this.state.pub -1 ]} setState={this.setState} state={this.state} />
         ];
