@@ -140,7 +140,7 @@ p {
 /* left side */
 
 #profiler {
-    background-color: #3B3432;
+    background-color: #1E1B1B;
     width: 12rem;
     height: 100vh;
 }
@@ -165,7 +165,6 @@ p {
 
 .person {
     height: 30vh;
-    background-color: #3B3432;
 }
 
 .tags {
@@ -174,24 +173,78 @@ p {
     overflow-y: scroll;
 }
 
-.tags ul li{
-    line-height: 2rem;
-
+.tags ul li {
+    line-height: 3rem;
 }
 
+.tagsTitle {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.tagsItem {
+    font-weight: lighter;
+}
 
 /* right side */
 
 #summary {
-    background: rgba(222, 244, 244, 1);
+    color: #000;
+    background: #F2F2F2;
     width: inherit;
     box-shadow: -7px 0px 15px rgba(0, 0, 0, 0.3);
     width: 19rem;
     height: 100vh;
 }
+
 .rightside {
     padding: 1.1rem;
     top: 0;
+}
+
+.summaryText {
+    color: rgba(0, 0, 0, 1);
+}
+
+.summaryTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.85rem;
+    color: rgba(0, 0, 0, 1);
+    line-height: 2.2rem;
+}
+
+.summaryNames {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.summaryDate {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.summaryPublication {
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.summaryTags {
+    font-style: italic;
+    font-size: .85rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.summaryLink {
+    font-weight: 700;
+    color: #2D45A2;
+}
+
+.summaryLink:hover {
+    letter-spacing: .05rem;
+    font-style: italic;
 }
 
 .image {
@@ -235,13 +288,13 @@ p {
 }
 
 .title-inside {
+    color: #000;
     padding-bottom: 2%;
-
 }
 
 .title-inside1 {
     padding-bottom: 6%;
-    border-bottom: 1px dotted #000;
+    border-bottom: 2px solid #2D45A2;
 }
 
 /* timeline */
@@ -276,6 +329,14 @@ p {
     justify-content: center;
     align-items: center;
 
+}
+
+.year li {
+    padding-top: .8rem;
+}
+
+button.timeEvent.match:hover {
+    cursor: pointer;
 }
 
 .row {
@@ -370,7 +431,7 @@ button.type, button.category {
     border: 0;
 }
 button.type.selected, button.category.selected {
-    background-color: black;
+    background-color: #413838;
 }
 button.type.unselected, button.category.unselected {
     background-color: rgba(255, 255, 255, 0);

@@ -34,9 +34,9 @@ export class Tags extends Component {
                     <h4>{config.author.institution}</h4>
                 </div>
                 <ul className="leftside tags">
-                    <li key="title0"> Categories </li>
+                    <li key="title0" className="tagsTitle"> Research Catagory </li>
                     {config.categories.map((category, i) => (
-                        <li key={i}>
+                        <li key={i} className="tagsItem">
                             <button
                                 className={categoryMatch[i]}
                                 onClick={( e ) => {
@@ -48,9 +48,10 @@ export class Tags extends Component {
                             </button>
                         </li>
                     ))}
-                    <li key="title1"> Types </li>
+                    <br />
+                    <li key="title1" className="tagsTitle"> Publication Types </li>
                     {config.types.map((types, i) => (
-                        <li key={i}>
+                        <li key={i} className="tagsItem">
                             <button
                                 className={typeMatch[i]}
                                 onClick={( e ) => {

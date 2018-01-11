@@ -25,19 +25,20 @@ export class Summary extends Component {
                     <div className="rightside title">
                             <div className="title-inside title-inside1">
                                 <Textfit mode="multi" style={{color: "#FFF"}}>
-                                    <h1>
+                                    <p className="summaryTitle">
                                         { pub.title }
-                                    </h1>
+                                    </p>
                                 </Textfit>
                             </div>
-                                <div className="title-inside">
-                                <br />
-                                <p> { names }
-                                <br /> { pub.date }
-                                <br /> { pub.publication }
-                                <br />{ pub.type } { pub.category }
+                            <div className="title-inside">
+                                <p />
+                                <p className="summaryText">
+                                    <p className="summaryNames"> { names } </p>
+                                    <p className="summaryDate" > { pub.date }, <span className="summaryPublication">{ pub.publication } </span></p>
+                                    <span className="summaryTags" > { pub.type } </span> <br />
+                                    <span className="summaryTags" > { pub.category } </span> <p />
+                                    <p><a className="summaryLink" href={ pub.link }>Read it Here →</a></p>
                                 </p>
-                                <p><a href={ pub.link }>Read it Here →</a></p>
                             </div>
                     </div>
                 </div>
