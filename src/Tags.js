@@ -28,7 +28,7 @@ export class Tags extends Component {
                 <div className="leftside display-pic">
                     <img alt='focus image' src={config.author.image} />
                 </div>
-                <div className="leftside person">
+                <div className="leftside person wordwrap">
                     <h2>{config.author.displayName}</h2>
                     <h3>{config.author.degrees}</h3>
                     <h4>{config.author.institution}</h4>

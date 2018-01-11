@@ -1,9 +1,9 @@
 import { pubs } from './data';
-import img from './2.png';
+import img from './media/profilepic.png';
 export const config = {
     author: {
         creditName: 'Gehlbach PL',
-        displayName: 'Peter L. Gehlbach',
+        displayName: 'Peter L Gehlbach',
         degrees: 'MD, PhD',
         institution: 'Johns Hopkins University',
         image: img,
