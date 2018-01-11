@@ -10,10 +10,12 @@ export class Summary extends Component {
 
     render() {
         const pub = this.props.pub;
-        let names = pub.authors[0].name;
-        const split = pub.authors[2] ? ', ' : ' & ';
-        if ( pub.authors[1] ) names += split + pub.authors[1].name;
-        if ( pub.authors[2] ) names += ' & ' + pub.authors[2].name;
+        let names = pub.author1;
+        const split = pub.author2 ? ', ' : ' & ';
+        if ( pub.author2 ) names += split + pub.author2;
+        if ( pub.author3 && pub.moreAuthors ) names += ', ' + pub.author3;
+        else if ( pub.author3 ) names += ' & ' + pub.author3;
+        if ( pub.moreAuthors ) names += ' et al.';
         const imgStyle = {
             backgroundImage: 'url(' + pub.image + ')',
             'objectFit': 'cover',
