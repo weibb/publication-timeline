@@ -22,6 +22,7 @@ const startingState = {
     type: 'all',
     category: 'all',
     pub: config.pubs.length-1,
+    initialLoad: true,
 };
 
 const time1 = new TimeEvent({ id: 'sup', children: 'I have content' });
@@ -60,7 +61,7 @@ class App extends Component {
         console.log(this.state.category);
     }
     getSummary( id ) {
-        this.setState({ pub: id });
+        this.setState({ pub: id, initialLoad: false });
     }
     render() {
         const items = [

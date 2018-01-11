@@ -18,8 +18,9 @@ export class Summary extends Component {
             backgroundImage: 'url(' + pub.image + ')',
             'objectFit': 'cover',
         }
+        const summaryLoadClass = this.state.initialLoad === true ? 'initial-load sidebar' : 'sidebar';
         return (
-            <div className="sidebar" id="summary">
+            <div className={summaryLoadClass} id="summary">
                 <div className="rightside image" style={imgStyle}> </div>
                 <div className="rightside info">
                     <div className="rightside title">
