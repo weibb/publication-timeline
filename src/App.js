@@ -21,7 +21,7 @@ const startingState = {
     matches: [],
     type: 'all',
     category: 'all',
-    pub: config.pubs.length-1,
+    pub: config.pubs.length,
     initialLoad: true,
 };
 
