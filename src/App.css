@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.leftside, .timeline, .rightside {
+.leftside, .timeline, .initial-load {
     animation: unblur 0.6s ease-out both;
 }
 @keyframes unblur {
