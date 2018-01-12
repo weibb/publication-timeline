@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import img1 from './media/1.png';
+import img2 from './media/2.png';
+import img3 from './media/3.png';
+import img4 from './media/4.png';
 import { Textfit } from 'react-textfit';
 
 export class Summary extends Component {
@@ -16,8 +20,9 @@ export class Summary extends Component {
         if ( pub.author3 && pub.moreAuthors ) names += ', ' + pub.author3;
         else if ( pub.author3 ) names += ' & ' + pub.author3;
         if ( pub.moreAuthors ) names += ' et al.';
+        const image = pub.image==="img1" ? img1 : pub.image==="img2" ? img2 : pub.image==="img3" ? img3 : img4
         const imgStyle = {
-            backgroundImage: 'url(' + pub.image + ')',
+            backgroundImage: 'url(' + image + ')',
             'objectFit': 'cover',
         }
         const summaryLoadClass = this.state.initialLoad === true ? 'initial-load sidebar' : 'sidebar';
