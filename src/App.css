@@ -179,6 +179,34 @@ p {
     width: 14.5rem;
     height: 100vh;
 }
+#about {
+    background-color: #ff00ff;
+    width: 14.5rem;
+    height: 54vh;
+    top: 46vh;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+#about.about-hide {
+    left: -14.5rem;
+}
+
+#about.about-show {
+    left: 0;
+}
+
+#about-button {
+    padding: 0 0 .5rem 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+    transition: all 0.5s ease;
+}
 
 .leftside h2 {
     font-size: 3rem;
@@ -228,7 +256,8 @@ p {
         rgba( 0, 0, 0, 1 ), rgba( 0, 0, 0, 0 ) 5%,rgba( 0, 0, 0, 0 ) 80%, rgba( 0, 0, 0, 1 ) 95%);
     content: "\00a0";
     height: 52vh;
-    width: 16.5vw;
+    width: 14.5rem;
+    left: 0;
     position: absolute;
     pointer-events: none;
 }
