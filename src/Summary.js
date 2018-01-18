@@ -38,7 +38,7 @@ export class Summary extends Component {
                                 <p className="summaryText">
                                     <p className="summaryNames"> { names } </p>
                                     <p className="summaryDate" > { pub.date }, <span className="summaryPublication">{ pub.publication } </span></p>
-                                    <span className="summaryTags" > { pub.type } </span> <br />
+                                    <span className="summaryTags" > { pub.type } </span> ,
                                     <span className="summaryTags" > { pub.category } </span> <p />
                                     <p><a className="summaryLink" href={ pub.link }>Read it Here →</a></p>
                                 </p>
