@@ -14,6 +14,8 @@ export class Tags extends Component {
         this.selectType = props.selectType;
         this.filter = props.filter;
         this.state = props.state;
+        this.showAbout = props.showAbout;
+        this.aboutVisible = props.aboutVisible;
     }
 
     render() {
@@ -22,6 +24,11 @@ export class Tags extends Component {
         ));
         const typeMatch = config.types.map((type, i) => (
             type === this.props.type ? "type selected" : "type"
+        ));
+        const aboutTag = this.props.aboutVisible === true ? 'about-show' : 'about-hide';
+        const aboutButtonText = this.props.aboutVisible === false ? 'About' : 'X';
+        const aboutLinks = config.author.links.map((link, i) => (
+            <a href={link.ref}> {link.text} </a>
         ));
         return (
             <div className="sidebar" id="profiler">
@@ -33,6 +40,13 @@ export class Tags extends Component {
                     <h3>{config.author.degrees}</h3>
                     <h4>{config.author.institution}</h4>
                 </div>
+                <button
+                    id="about-button"
+                    onClick={( e ) => {
+                        console.log( 'clicked About' );
+                        this.showAbout();
+                    }}
+                > {aboutButtonText} </button>
                 <ul className="leftside tags">
                     <li key="title0" className="tagsTitle"> Research Catagory </li>
                     {config.categories.map((category, i) => (
@@ -65,6 +79,10 @@ export class Tags extends Component {
                         </li>
                     ))}
                 </ul>
+                <div id="about" className={aboutTag}>
+                    <p>{config.author.summary}</p>
+                    {aboutLinks}
+                </div>
             </div>
 
         );

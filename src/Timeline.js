@@ -37,18 +37,18 @@ export class Timeline extends Component {
                     {
                         const match = event.match ? true : false;
                         if (event.date == year){
-                            pubsByYear.push(<TimeEvent id={(event.id + 1).toString()} key={event.id + 1} match={match} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
+                            pubsByYear.push(<TimeEvent key={event.id} id={(event.id + 1).toString()} key={event.id + 1} match={match} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
                         }
                     }
                 );
-                let yearColumn = <div id={year} className='year'>
+                let yearColumn = <div id={year} key={year} className='year'>
                     {pubsByYear}
                 </div>
                 // console.log(pubsByYear);
                 timeline.push(yearColumn);
                 const name = year % 10 === 0 ? year.toString() : '';
                 const tick = year % 10 === 0 ? 'bigTick' : 'tick';
-                const yearMeasure = <div className='measure measure{year}'>
+                const yearMeasure = <div className='measure measure{year}' key={year}>
                     <div className ={tick}></div>
                     <p className = 'yearName'>{name}</p>
                 </div>

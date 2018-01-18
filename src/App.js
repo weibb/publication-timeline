@@ -23,6 +23,7 @@ const startingState = {
     category: 'all',
     pub: config.pubs.length,
     initialLoad: true,
+    aboutVisible: false,
 };
 
 const time1 = new TimeEvent({ id: 'sup', children: 'I have content' });
@@ -38,6 +39,7 @@ class App extends Component {
         this.selectType = this.selectType.bind( this );
         this.selectCategory = this.selectCategory.bind( this );
         this.getSummary = this.getSummary.bind( this );
+        this.showAbout = this.showAbout.bind( this );
     }
     filter() {
         const { pubs } = config;
@@ -56,6 +58,10 @@ class App extends Component {
     selectType( tag ) {
         this.setState({ type: tag });
     }
+    showAbout() {
+        this.setState({ aboutVisible: !this.state.aboutVisible });
+        console.log(this.state);
+    }
     selectCategory( tag ) {
         this.setState({ category: tag });
         console.log(this.state.category);
@@ -69,7 +75,7 @@ class App extends Component {
         ];
         return (
             <div id="container">
-                <Tags type={this.state.type} state={this.state} category={this.state.category} selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
+                <Tags type={this.state.type} state={this.state} category={this.state.category} showAbout={this.showAbout} aboutVisible={this.state.aboutVisible} selectCategory={this.selectCategory} setState={this.setState} selectType={this.selectType} filter={this.filter} />
                 <Timeline matches={this.filter()} state={this.state} getSummary={this.getSummary} />
                 <ReactCSSTransitionGroup
                     transitionName={ {
