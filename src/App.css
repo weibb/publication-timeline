@@ -20,6 +20,14 @@
     background: linear-gradient(to top, #6e79df, #425bbc);
 }
 
+#textfit-title {
+    height: 40vh;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -96,12 +104,11 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1.75rem;
-    color: rgba(255, 255, 255, 1);
     padding: 0;
     margin: 0;
 }
 
-h2 {
+.leftside h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
@@ -110,7 +117,7 @@ h2 {
     margin: 0rem;
 }
 
-h3 {
+.leftside h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
@@ -119,7 +126,7 @@ h3 {
     margin-top: .5rem;
 }
 
-h4 {
+.leftside h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
@@ -136,7 +143,9 @@ p {
     margin: 0 0 1rem 0;
     color: rgba( 255, 255, 255, 1 );
 }
-
+.leftside p {
+    color: rgba( 255, 255, 255, 1 );
+}
 .wordwrap {
    white-space: pre-wrap;      /* CSS3 */
    white-space: -moz-pre-wrap; /* Firefox */
@@ -254,13 +263,13 @@ p {
     color: rgba(0, 0, 0, 1);
 }
 
-.summaryTitle {
+/* .summaryTitle {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 1.85rem;
     color: rgba(0, 0, 0, 1);
     line-height: 2.2rem;
-}
+} */
 
 .summaryNames {
     font-size: 1.2rem;
