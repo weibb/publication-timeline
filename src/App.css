@@ -219,9 +219,18 @@ p {
 }
 
 .tags {
-    height: 55vh;
-    background: linear-gradient (to top, #6e79df, #425bbc);
+    height: 52vh;
     overflow-y: scroll;
+}
+
+.tags::before {
+    background-image: linear-gradient( top,
+        rgba( 0, 0, 0, 1 ), rgba( 0, 0, 0, 0 ) 5%,rgba( 0, 0, 0, 0 ) 80%, rgba( 0, 0, 0, 1 ) 95%);
+    content: "\00a0";
+    height: 52vh;
+    width: 16.5vw;
+    position: absolute;
+    pointer-events: none;
 }
 
 .tags ul li {
@@ -229,8 +238,7 @@ p {
 }
 
 .tagsTitle {
-    padding-left: 1rem;
-    padding-bottom: .5rem;
+    padding: 1rem 0 .5rem 1rem;
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
@@ -241,6 +249,7 @@ p {
     font-weight: lighter;
     width: 100%;
 }
+
 
 /**************************** right side ***************************/
 
@@ -389,7 +398,7 @@ p {
 }
 
 .year li {
-    padding-top: .8rem;
+    /*padding-top: .8rem;*/
 }
 @media (max-width: 1199px) {
     .year li {padding-top: 0.3rem;}
@@ -449,20 +458,20 @@ button.timeEvent.match:hover {
 p.yearName {
     color: rgba(0, 0, 0, 1);
     line-height: 1.25rem;
-    margin: 0;
+    margin: .5rem 0 0 0;
 }
 
 .tick {
     width: 1px;
     left: 70%;
-    height: 33%;
+    height: 25%;
     top: 0;
     background-color: rgba(0, 0, 0, 1);
 }
 .bigTick {
     width: 1px;
     left: 70%;
-    height: 66%;
+    height: 50%;
     top: 0;
     background-color: rgba(0, 0, 0, 1);
 }
@@ -495,6 +504,7 @@ button.type, button.category {
     font-size: 0.8rem;
     outline: none;
     border: 0;
+    cursor: pointer;
 }
 button.type.selected, button.category.selected {
     background-color: #FFFFFF;
@@ -506,7 +516,7 @@ button.type.unselected, button.category.unselected {
 }
 button.timeEvent {
     background-color: #000;
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 60%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 50%);
     border: 0;
     border-radius: 50%;
     width: 100%;
