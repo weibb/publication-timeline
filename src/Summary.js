@@ -32,10 +32,8 @@ export class Summary extends Component {
                 <div className="rightside info">
                     <div className="rightside title">
                             <div className="title-inside title-inside1">
-                                <Textfit mode="multi" style={{color: "#FFF"}}>
-                                    <p className="summaryTitle">
+                                <Textfit mode="multi" id="textfit-title" className="summaryText">
                                         { pub.title }
-                                    </p>
                                 </Textfit>
                             </div>
                             <div className="title-inside">
