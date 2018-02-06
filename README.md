@@ -158,11 +158,11 @@ const startingState = {
 
 ## Components
 
-1. **<App>** - the master React app element
-1. **<Timeline>** - the main viewable area, which holds `<TimeEvent>` components arranged by year
-1. **<TimeEvent>** - the element for an individual publication, containing a button that triggers the `getSummary()` event
-1. **<Tags>** - the left sidebar element, which contains author info and type/category tags with `getType()` and `getCategory` events. This should be renamed to reflect the full scope of the element
-1. **<Summary>** - the right sidebar element, which displays a summary of the selected publication
+1. **App** - the master React app element
+1. **Timeline** - the main viewable area, which holds `<TimeEvent>` components arranged by year
+1. **TimeEvent** - the element for an individual publication, containing a button that triggers the `getSummary()` event
+1. **Tags** - the left sidebar element, which contains author info and type/category tags with `getType()` and `getCategory` events. This should be renamed to reflect the full scope of the element
+1. **Summary** - the right sidebar element, which displays a summary of the selected publication
 
 ## Available Scripts
 
