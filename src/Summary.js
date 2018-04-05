@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import img1 from './media/1.png';
-import img2 from './media/2.png';
-import img3 from './media/3.png';
+import basic from './media/basic.png';
+import clinical from './media/clinical.png';
+import engineering from './media/engineering.png';
 import img4 from './media/4.png';
 import { Textfit } from 'react-textfit';
 
@@ -20,18 +20,22 @@ export class Summary extends Component {
         if ( pub.author3 && pub.moreAuthors ) names += ', ' + pub.author3;
         else if ( pub.author3 ) names += ' & ' + pub.author3;
         if ( pub.moreAuthors ) names += ' et al.';
-        const image = pub.image==="img1" ? img1 : pub.image==="img2" ? img2 : pub.image==="img3" ? img3 : img4
+        const image = pub.category==="Basic" ? basic : pub.category==="Clinical" ? clinical : pub.category==="Engineering" ? engineering : img4
         const imgStyle = {
             backgroundImage: 'url(' + image + ')',
             'objectFit': 'cover',
         }
         const summaryLoadClass = this.state.initialLoad === true ? 'initial-load sidebar' : 'sidebar';
+        let linkHolder = <div></div>;
+        if ( pub.link !== "") {
+          linkHolder = <p><a className={ "summaryLink " + pub.category } href={ pub.link }>Read it Here →</a></p>;
+        }
         return (
             <div className={summaryLoadClass} id="summary">
                 <div className="rightside image" style={imgStyle}> </div>
                 <div className="rightside info">
                     <div className="rightside title">
-                            <div className="title-inside title-inside1">
+                            <div className= {"title-inside title-inside1 " + pub.category}>
                                 <Textfit mode="multi" id="textfit-title" className="summaryText">
                                         { pub.title }
                                 </Textfit>
@@ -39,11 +43,11 @@ export class Summary extends Component {
                             <div className="title-inside">
                                 <p />
                                 <div className="summaryText">
-                                    <p className="summaryNames"> { names } </p>
+                                    <p className={"summaryNames " + pub.category}> { names } </p>
                                     <p className="summaryDate" > { pub.date }, <span className="summaryPublication">{ pub.publication } </span></p>
                                     <span className="summaryTags" > { pub.type } </span> ,
                                     <span className="summaryTags" > { pub.category } </span> <p />
-                                    <p><a className="summaryLink" href={ pub.link }>Read it Here →</a></p>
+                                    { linkHolder }
                                 </div>
                             </div>
                     </div>

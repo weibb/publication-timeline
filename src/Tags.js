@@ -26,28 +26,38 @@ export class Tags extends Component {
             type === this.props.type ? "type selected" : "type"
         ));
         const aboutTag = this.props.aboutVisible === true ? 'about-show' : 'about-hide';
-        const aboutButtonText = this.props.aboutVisible === false ? 'About' : 'X';
-        const aboutLinks = config.author.links.map((link, i) => (
+        const aboutButtonText = this.props.aboutVisible === false ? '⚬ About' : '✖ Close';
+        const aboutLink1 = config.author.link1.map((link, i) => (
+            <a href={link.ref}> {link.text} </a>
+        ));
+        const aboutLink2 = config.author.link2.map((link, i) => (
+            <a href={link.ref}> {link.text} </a>
+        ));
+        const aboutLink3 = config.author.link3.map((link, i) => (
+            <a href={link.ref}> {link.text} </a>
+        ));
+        const aboutLink4 = config.author.link4.map((link, i) => (
+            <a href={link.ref}> {link.text} </a>
+        ));
+        const aboutLink5 = config.author.link5.map((link, i) => (
             <a href={link.ref}> {link.text} </a>
         ));
         return (
             <div className="sidebar" id="profiler">
-                <div className="leftside display-pic">
+                <div id="person" className="leftside wordwrap">
                     <img alt='focus image' src={config.author.image} />
-                </div>
-                <div className="leftside person wordwrap">
                     <h2>{config.author.displayName}</h2>
                     <h3>{config.author.degrees}</h3>
                     <h4>{config.author.institution}</h4>
+                    <button
+                        id="about-button"
+                        onClick={( e ) => {
+                            console.log( 'clicked About' );
+                            this.showAbout();
+                        }}
+                    > {aboutButtonText} </button>
                 </div>
-                <button
-                    id="about-button"
-                    onClick={( e ) => {
-                        console.log( 'clicked About' );
-                        this.showAbout();
-                    }}
-                > {aboutButtonText} </button>
-                <ul className="leftside tags">
+                <ul id="tags" className="leftside">
                     <li key="title0" className="tagsTitle"> Research Catagory </li>
                     {config.categories.map((category, i) => (
                         <li key={i} className="tagsItem">
@@ -62,7 +72,6 @@ export class Tags extends Component {
                             </button>
                         </li>
                     ))}
-                    <br />
                     <li key="title1" className="tagsTitle"> Publication Types </li>
                     {config.types.map((types, i) => (
                         <li key={i} className="tagsItem">
@@ -81,7 +90,11 @@ export class Tags extends Component {
                 </ul>
                 <div id="about" className={aboutTag}>
                     <p>{config.author.summary}</p>
-                    {aboutLinks}
+                    {aboutLink1} <br />
+                    {aboutLink2} <br />
+                    {aboutLink3} <br />
+                    {aboutLink4} <br />
+                    {aboutLink5} <br />
                 </div>
             </div>
 

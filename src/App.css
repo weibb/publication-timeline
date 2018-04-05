@@ -3,7 +3,7 @@
 .App {
   text-align: center;
 }
-
+/*
 .leftside, .timeline, .initial-load {
     animation: unblur 0.6s ease-out both;
 }
@@ -15,7 +15,7 @@
         filter: blur(0px);
     }
 }
-
+*/
 #container {
     background: linear-gradient(to top, #6e79df, #425bbc);
 }
@@ -143,6 +143,7 @@ p {
     margin: 0 0 1rem 0;
     color: rgba( 255, 255, 255, 1 );
 }
+
 .leftside p {
     color: rgba( 255, 255, 255, 1 );
 }
@@ -168,6 +169,7 @@ p {
 .sidebar {
 
     height: 100vh;
+
     padding: 0;
     border: 0;
 }
@@ -179,13 +181,74 @@ p {
     width: 14.5rem;
     height: 100vh;
 }
-#about {
-    background-color: #ff00ff;
+
+#person img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 0 1rem 0;
+}
+
+#person {
+    height: 42vh;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+#tags {
+    height: 58vh;
+    overflow-y: scroll;
+    padding: .5rem 0 2rem 0;
+}
+
+#tags::before {
+    margin-top: -.5rem;
+    background-image: linear-gradient( top,
+        rgba( 0, 0, 0, 1 ), rgba( 0, 0, 0, 0 ) 6%,rgba( 0, 0, 0, 0 ) 90%, rgba( 0, 0, 0, 1 ) 100%);
+    content: "\00a0";
+    height: 58vh;
     width: 14.5rem;
-    height: 54vh;
-    top: 46vh;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#tags ul li {
+    line-height: 3rem;
+}
+
+#about {
+    border: 12px solid #000;
+    border-top: none;
+    width: 14.5rem;
+    height: 58vh;
+    top: 42vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 1rem;
     position: absolute;
     transition: all 0.5s ease;
+}
+
+#about p {
+    color: #000;
+}
+
+#about a, #about a:visited{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-size: .85rem;
+    color: #4C6ADA;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+#about a:hover, #about a:visited:hover {
+    letter-spacing: .05rem;
+    font-style: italic;
 }
 
 #about.about-hide {
@@ -197,15 +260,21 @@ p {
 }
 
 #about-button {
-    padding: 0 0 .5rem 1rem;
+    padding: 0;
     font-weight: 700;
-    color: #ffffff;
+    color: #F1E9E7;
     font-style: italic;
+    text-decoration: underline;
     text-transform: uppercase;
     background-color: rgba(0,0,0,0);
     border: none;
     outline: none;
     transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#about-button:hover {
+    font-style: normal;
 }
 
 .leftside h2 {
@@ -233,41 +302,8 @@ p {
     object-fit: cover   ;
 }
 
-.display-pic {
-    height: 15vh;
-}
-
-.display-pic img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.person {
-    height: auto;
-}
-
-.tags {
-    height: 52vh;
-    overflow-y: scroll;
-}
-
-.tags::before {
-    background-image: linear-gradient( top,
-        rgba( 0, 0, 0, 1 ), rgba( 0, 0, 0, 0 ) 5%,rgba( 0, 0, 0, 0 ) 80%, rgba( 0, 0, 0, 1 ) 95%);
-    content: "\00a0";
-    height: 52vh;
-    width: 14.5rem;
-    left: 0;
-    position: absolute;
-    pointer-events: none;
-}
-
-.tags ul li {
-    line-height: 3rem;
-}
-
 .tagsTitle {
-    padding: 1rem 0 .5rem 1rem;
+    padding: 1.5rem 0 0rem 1rem;
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
@@ -334,10 +370,25 @@ p {
 
 .summaryLink {
     font-weight: 700;
-    color: #2D45A2;
+    color: #000;
 }
 
-.summaryLink:hover {
+.summaryLink.Engineering, .summaryLink.Engineering:visited {
+    font-weight: 700;
+    color: #BE8632;
+}
+
+.summaryLink.Clinical, .summaryLink.Clinical:visited {
+    font-weight: 700;
+    color: #BA4A39;
+}
+
+.summaryLink.Basic, .summaryLink.Basic:visited {
+    font-weight: 700;
+    color: #4C6ADA;
+}
+
+.summaryLink:hover, .summaryLink:visited:hover {
     letter-spacing: .05rem;
     font-style: italic;
 }
@@ -346,11 +397,9 @@ p {
     height: 25vh;
     padding: 0;
     border: 12px solid #000;
+    background-size: cover;
 }
 
-.image img {
-    object-fit: cover;
-}
 .example-enter {
   opacity: 0.01;
 }
@@ -389,8 +438,24 @@ p {
 
 .title-inside1 {
     padding-bottom: 6%;
-    border-bottom: 2px solid #2D45A2;
+    border-bottom: 2px solid #000;
 }
+
+.title-inside1.Engineering {
+    padding-bottom: 6%;
+    border-bottom: 2px solid #BE8632;
+}
+
+.title-inside1.Clinical {
+    padding-bottom: 6%;
+    border-bottom: 2px solid #BA4A39;
+}
+
+.title-inside1.Basic {
+    padding-bottom: 6%;
+    border-bottom: 2px solid #4C6ADA;
+}
+
 
 /* timeline */
 

@@ -1,42 +1,62 @@
 import { pubs } from './data';
 import img from './media/profilepic.png';
+for(let i = 0; i < pubs.length; i += 1) {
+  pubs[i].id = i;
+}
 export const config = {
     author: {
         displayName: 'Peter L Gehlbach',
         degrees: 'MD, PhD',
         institution: 'Johns Hopkins University',
         image: img,
-        summary: 'Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.',
-        links: [
+        summary: 'Peter Louis Gehlbach, MD, PhD, is Professor of Ophthalmology at the Johns Hopkins Wilmer Eye Institute. Dr. Gehlbach specializes in performing complex vitreo-retinal surgery and his grant-supported research is directed at discovering new treatments for blinding eye disease.',
+        link1: [
             {
-                text: 'Click This Informative Link →',
-                ref: 'http://google.com',
+                text: 'Professional Site →',
+                ref: 'https://weibb.github.io/pgeh-site/',
             },
+        ],
+        link2: [
             {
-                text: 'This One Is Great Too →',
-                ref: 'http://google.com',
+                text: 'Johns Hopkins Profile →',
+                ref: 'https://www.hopkinsmedicine.org/profiles/results/directory/profile/0015470/peter-gehlbach',
+            },
+        ],
+        link3: [
+            {
+                text: 'LinkedIn →',
+                ref: 'https://www.linkedin.com/in/drpetergehlbach',
+            },
+        ],
+        link4: [
+            {
+                text: 'Doximity →',
+                ref: 'https://www.doximity.com/cv/drpetergehlbach',
+            },
+        ],
+        link5: [
+            {
+                text: 'Google Scholar →',
+                ref: 'https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en',
             },
         ],
     },
     pubs: pubs,
     categories: [
-        'all',
+        'All',
         'Basic',
         'Clinical',
         'Engineering',
     ],
     types: [
-        'all',
+        'All',
         'Original Research',
-        'Collaborative',
+        'Clinical Trial',
         'Case Report',
         'Abstract',
         'Book Chapter',
         'Editorial',
-        'Poster',
         'Proceeding Report',
         'Patent',
-        'Grant',
-        'Other',
     ],
 }
