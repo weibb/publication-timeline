@@ -15,7 +15,7 @@ const timeline = <Timeline />
 const startingState = {
     config: config,
     minYear: 1970,
-    maxYear: 2017,
+    maxYear: 2018,
     years: [],
     taggedYears: [],
     matches: [],

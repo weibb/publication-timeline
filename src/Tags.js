@@ -58,7 +58,7 @@ export class Tags extends Component {
                     > {aboutButtonText} </button>
                 </div>
                 <ul id="tags" className="leftside">
-                    <li key="title0" className="tagsTitle"> Research Catagory </li>
+                    <li key="title0" className="tagsTitle1"> Research Catagory </li>
                     {config.categories.map((category, i) => (
                         <li key={i} className="tagsItem">
                             <button

@@ -3,19 +3,7 @@
 .App {
   text-align: center;
 }
-/*
-.leftside, .timeline, .initial-load {
-    animation: unblur 0.6s ease-out both;
-}
-@keyframes unblur {
-    from {
-        filter: blur(10px);
-    }
-    to {
-        filter: blur(0px);
-    }
-}
-*/
+
 #container {
     background: linear-gradient(to top, #6e79df, #425bbc);
 }
@@ -167,9 +155,7 @@ p {
 }
 
 .sidebar {
-
     height: 100vh;
-
     padding: 0;
     border: 0;
 }
@@ -194,6 +180,18 @@ p {
     overflow-y: scroll;
 }
 
+#person::before {
+    background-image: linear-gradient( to bottom,
+        rgba( 0, 0, 0, 0 ) 95%, rgba( 0, 0, 0, 1 ) 100%);
+    content: "\00a0";
+    border-bottom: 1rem #000 solid;
+    height: 42vh;
+    width: 14.5rem;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
 #tags {
     height: 58vh;
     overflow-y: scroll;
@@ -201,8 +199,7 @@ p {
 }
 
 #tags::before {
-    margin-top: -.5rem;
-    background-image: linear-gradient( top,
+    background-image: linear-gradient( to bottom,
         rgba( 0, 0, 0, 1 ), rgba( 0, 0, 0, 0 ) 6%,rgba( 0, 0, 0, 0 ) 90%, rgba( 0, 0, 0, 1 ) 100%);
     content: "\00a0";
     height: 58vh;
@@ -223,14 +220,14 @@ p {
     height: 58vh;
     top: 42vh;
     overflow-y: scroll;
-    background-color: #fff;
+    background-color: #000;
     padding: 1rem;
     position: absolute;
     transition: all 0.5s ease;
 }
 
 #about p {
-    color: #000;
+    color: #fff;
 }
 
 #about a, #about a:visited{
@@ -300,6 +297,13 @@ p {
 .leftside.display-pic {
     padding: 1rem;
     object-fit: cover   ;
+}
+
+.tagsTitle1 {
+    padding: 1rem 0 0rem 1rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .tagsTitle {

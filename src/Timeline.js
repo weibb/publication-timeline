@@ -32,7 +32,7 @@ export class Timeline extends Component {
             const timeline = [];
             const ruler = [];
             const d = new Date();
-            for( let year = 1990; year <= d.getFullYear(); year += 1){
+            for( let year = 1992; year <= d.getFullYear(); year += 1){
                 const pubsByYear = [];
                 pubs.map( event =>
                     {

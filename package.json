@@ -1,10 +1,9 @@
 {
   "name": "publication-timeline",
-  "homepage": "http://equinoxfires.github.io/publication-timeline",
+  "homepage": "http://weibb.github.io/publication-timeline",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^15.6.1",
@@ -22,6 +21,7 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "url-loader": "^0.5.9"
   }
 }
