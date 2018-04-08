@@ -36,7 +36,7 @@ export class Summary extends Component {
                 <div className="rightside info">
                     <div className="rightside title">
                             <div className= {"title-inside title-inside1 " + pub.category}>
-                                <Textfit mode="multi" id="textfit-title" className="summaryText">
+                                <Textfit mode="multi" className="summaryText, textfit-title">
                                         { pub.title }
                                 </Textfit>
                             </div>

@@ -46,19 +46,20 @@ export class Tags extends Component {
             <div className="sidebar" id="profiler">
                 <div id="person" className="leftside wordwrap">
                     <img alt='focus image' src={config.author.image} />
-                    <h2>{config.author.displayName}</h2>
-                    <h3>{config.author.degrees}</h3>
-                    <h4>{config.author.institution}</h4>
-                    <button
-                        id="about-button"
-                        onClick={( e ) => {
-                            console.log( 'clicked About' );
-                            this.showAbout();
-                        }}
-                    > {aboutButtonText} </button>
+                        <h2>{config.author.displayName}</h2>
+                        <h3>{config.author.degrees}</h3>
+                        <h4>{config.author.title} <br />
+                            <b>{config.author.institution}</b></h4>
+                        <button
+                            id="about-button"
+                            onClick={( e ) => {
+                                console.log( 'clicked About' );
+                                this.showAbout();
+                            }}
+                        > {aboutButtonText} </button>
                 </div>
                 <ul id="tags" className="leftside">
-                    <li key="title0" className="tagsTitle1"> Research Catagory </li>
+                    <li key="title0" className="tagsTitle"> Research Catagory </li>
                     {config.categories.map((category, i) => (
                         <li key={i} className="tagsItem">
                             <button

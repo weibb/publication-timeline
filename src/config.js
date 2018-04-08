@@ -7,6 +7,7 @@ export const config = {
     author: {
         displayName: 'Peter L Gehlbach',
         degrees: 'MD, PhD',
+        title: 'Professor of Othamology',
         institution: 'Johns Hopkins University',
         image: img,
         summary: 'Peter Louis Gehlbach, MD, PhD, is Professor of Ophthalmology at the Johns Hopkins Wilmer Eye Institute. Dr. Gehlbach specializes in performing complex vitreo-retinal surgery and his grant-supported research is directed at discovering new treatments for blinding eye disease.',
@@ -43,13 +44,13 @@ export const config = {
     },
     pubs: pubs,
     categories: [
-        'All',
+        'all',
         'Basic',
         'Clinical',
         'Engineering',
     ],
     types: [
-        'All',
+        'all',
         'Original Research',
         'Clinical Trial',
         'Case Report',
