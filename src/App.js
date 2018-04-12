@@ -9,6 +9,7 @@ import { TimeEvent } from './TimeEvent';
 import { Summary } from './Summary';
 import { Tags } from './Tags';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { MobileOverlay } from './MobileOverlay';
 import './App.css';
 
 const timeline = <Timeline />
@@ -88,6 +89,7 @@ class App extends Component {
                     transitionLeaveTimeout={1500}>
                     {items}
                 </ReactCSSTransitionGroup>
+                { MobileOverlay }
             </div>
         );
     }

@@ -27,20 +27,8 @@ export class Tags extends Component {
         ));
         const aboutTag = this.props.aboutVisible === true ? 'about-show' : 'about-hide';
         const aboutButtonText = this.props.aboutVisible === false ? '⚬ About' : '✖ Close';
-        const aboutLink1 = config.author.link1.map((link, i) => (
-            <a href={link.ref}> {link.text} </a>
-        ));
-        const aboutLink2 = config.author.link2.map((link, i) => (
-            <a href={link.ref}> {link.text} </a>
-        ));
-        const aboutLink3 = config.author.link3.map((link, i) => (
-            <a href={link.ref}> {link.text} </a>
-        ));
-        const aboutLink4 = config.author.link4.map((link, i) => (
-            <a href={link.ref}> {link.text} </a>
-        ));
-        const aboutLink5 = config.author.link5.map((link, i) => (
-            <a href={link.ref}> {link.text} </a>
+        const aboutLinks = config.author.links.map((link, i) => (
+            <p><a href={link.ref}> {link.text} </a><br /></p>
         ));
         return (
             <div className="sidebar" id="profiler">
@@ -91,11 +79,7 @@ export class Tags extends Component {
                 </ul>
                 <div id="about" className={aboutTag}>
                     <p>{config.author.summary}</p>
-                    {aboutLink1} <br />
-                    {aboutLink2} <br />
-                    {aboutLink3} <br />
-                    {aboutLink4} <br />
-                    {aboutLink5} <br />
+                    {aboutLinks} <br />
                 </div>
             </div>
 

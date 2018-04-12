@@ -11,31 +11,23 @@ export const config = {
         institution: 'Johns Hopkins University',
         image: img,
         summary: 'Peter Louis Gehlbach, MD, PhD, is Professor of Ophthalmology at the Johns Hopkins Wilmer Eye Institute. Dr. Gehlbach specializes in performing complex vitreo-retinal surgery and his grant-supported research is directed at discovering new treatments for blinding eye disease.',
-        link1: [
+        links: [
             {
                 text: 'Professional Site →',
                 ref: 'https://weibb.github.io/pgeh-site/',
             },
-        ],
-        link2: [
             {
                 text: 'Johns Hopkins Profile →',
                 ref: 'https://www.hopkinsmedicine.org/profiles/results/directory/profile/0015470/peter-gehlbach',
             },
-        ],
-        link3: [
             {
                 text: 'LinkedIn →',
                 ref: 'https://www.linkedin.com/in/drpetergehlbach',
             },
-        ],
-        link4: [
             {
                 text: 'Doximity →',
                 ref: 'https://www.doximity.com/cv/drpetergehlbach',
             },
-        ],
-        link5: [
             {
                 text: 'Google Scholar →',
                 ref: 'https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en',

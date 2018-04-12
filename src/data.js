@@ -801,7 +801,7 @@ export const pubs = [
    "title": "Adaptive multispectral illumination for retinal microsurgery",
    "publication": "Medical Image Computing and Computer-Assisted Intervention",
    "author1": "Sznitman R",
-   "author2": "RAbstract D",
+   "author2": "Rother D",
    "author3": "Gehlbach PL",
    "moreAuthors": true,
    "date": 2010,
@@ -1827,7 +1827,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 1999,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1841,7 +1841,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 1999,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1855,7 +1855,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2006,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1869,7 +1869,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2006,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1883,7 +1883,7 @@ export const pubs = [
    "author3": "Gehlbach PL",
    "moreAuthors": false,
    "date": 2008,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1897,7 +1897,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2011,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1911,7 +1911,7 @@ export const pubs = [
    "author3": "Gehlbach PL",
    "moreAuthors": false,
    "date": 2014,
-   "category": "",
+   "category": "Basic",
    "type": "Book Chapter",
    "link": "",
    "image": "",
@@ -1925,7 +1925,7 @@ export const pubs = [
    "author3": "Hunyor AP",
    "moreAuthors": true,
    "date": 2001,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11587176",
    "image": "",
@@ -1939,7 +1939,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2004,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "",
    "image": "",
@@ -1953,7 +1953,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2006,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "",
    "image": "",
@@ -1967,7 +1967,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2010,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "",
    "image": "",
@@ -1981,7 +1981,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2011,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "",
    "image": "",
@@ -1995,7 +1995,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2012,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "",
    "image": "",
@@ -2009,7 +2009,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2014,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "https://www.medscape.com/viewarticle/821488",
    "image": "",
@@ -2023,7 +2023,7 @@ export const pubs = [
    "author3": "",
    "moreAuthors": false,
    "date": 2011,
-   "category": "",
+   "category": "Basic",
    "type": "Editorial",
    "link": "https://www.dailytrust.com.ng/weekly/index.php/health-extra/5887-smoking-strongly-linked-to-age-related-blindness",
    "image": "",
@@ -2103,7 +2103,7 @@ export const pubs = [
    "title": "Adaptive multispectral illumination for retinal microsurgery",
    "publication": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)",
    "author1": "Sznitman R",
-   "author2": "RAbstract D",
+   "author2": "Rother D",
    "author3": "Gehlbach PL",
    "moreAuthors": true,
    "date": 2010,
@@ -2580,7 +2580,7 @@ export const pubs = [
    "publication": "Extended Abstract in INFORMS Healthcare 2011",
    "author1": "Sznitman R",
    "author2": "Billings S",
-   "author3": "RAbstract D",
+   "author3": "Rother D",
    "moreAuthors": true,
    "date": 2011,
    "category": "Basic",
@@ -2654,7 +2654,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2010,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2373796",
    "image": "",
    "notes": ""
@@ -2668,7 +2668,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 2010,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2682,7 +2682,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2009,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2366229",
    "image": "",
    "notes": ""
@@ -2696,7 +2696,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/18515589",
    "image": "",
    "notes": ""
@@ -2710,7 +2710,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2380714",
    "image": "",
    "notes": ""
@@ -2724,7 +2724,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2379977",
    "image": "",
    "notes": ""
@@ -2738,7 +2738,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2752,7 +2752,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2379978",
    "image": "",
    "notes": ""
@@ -2766,7 +2766,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2376899&resultClick=1",
    "image": "",
    "notes": ""
@@ -2780,7 +2780,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2380550",
    "image": "",
    "notes": ""
@@ -2794,7 +2794,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2378792",
    "image": "",
    "notes": ""
@@ -2808,7 +2808,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2376031",
    "image": "",
    "notes": ""
@@ -2822,7 +2822,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2008,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2836,7 +2836,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/17962488",
    "image": "",
    "notes": ""
@@ -2850,7 +2850,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2864,7 +2864,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/18172118",
    "image": "",
    "notes": ""
@@ -2878,7 +2878,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2892,7 +2892,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2387890",
    "image": "",
    "notes": ""
@@ -2906,7 +2906,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2385596",
    "image": "",
    "notes": ""
@@ -2920,7 +2920,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2007,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2383668",
    "image": "",
    "notes": ""
@@ -2934,7 +2934,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2006,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2948,7 +2948,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2006,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(06)01253-6",
    "image": "",
    "notes": ""
@@ -2962,7 +2962,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2006,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2976,7 +2976,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2006,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -2990,7 +2990,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2006,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2392559",
    "image": "",
    "notes": ""
@@ -3004,7 +3004,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2006,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2391939",
    "image": "",
    "notes": ""
@@ -3018,7 +3018,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/16289888",
    "image": "",
    "notes": ""
@@ -3032,7 +3032,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/16876508",
    "image": "",
    "notes": ""
@@ -3046,7 +3046,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/16876508",
    "image": "",
    "notes": ""
@@ -3060,7 +3060,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2182425",
    "image": "",
    "notes": ""
@@ -3074,7 +3074,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2400030",
    "image": "",
    "notes": ""
@@ -3088,7 +3088,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2400052",
    "image": "",
    "notes": ""
@@ -3102,7 +3102,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2401698",
    "image": "",
    "notes": ""
@@ -3116,7 +3116,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2402343",
    "image": "",
    "notes": ""
@@ -3130,7 +3130,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3144,7 +3144,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2402443",
    "image": "",
    "notes": ""
@@ -3158,7 +3158,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2402910",
    "image": "",
    "notes": ""
@@ -3172,7 +3172,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3186,7 +3186,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2403910",
    "image": "",
    "notes": ""
@@ -3200,7 +3200,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2404631",
    "image": "",
    "notes": ""
@@ -3214,7 +3214,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2005,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2404630",
    "image": "",
    "notes": ""
@@ -3228,7 +3228,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2004,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3242,7 +3242,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2004,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/18827806",
    "image": "",
    "notes": ""
@@ -3256,7 +3256,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2004,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2406004",
    "image": "",
    "notes": ""
@@ -3270,7 +3270,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2004,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2405987",
    "image": "",
    "notes": ""
@@ -3284,7 +3284,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2004,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3298,7 +3298,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3312,7 +3312,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2412738",
    "image": "",
    "notes": ""
@@ -3326,7 +3326,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2412236",
    "image": "",
    "notes": ""
@@ -3340,7 +3340,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2414135",
    "image": "",
    "notes": ""
@@ -3354,7 +3354,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2414952",
    "image": "",
    "notes": ""
@@ -3368,7 +3368,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2415434",
    "image": "",
    "notes": ""
@@ -3382,7 +3382,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2415380",
    "image": "",
    "notes": ""
@@ -3396,7 +3396,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3410,7 +3410,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2415384",
    "image": "",
    "notes": ""
@@ -3424,7 +3424,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2415388",
    "image": "",
    "notes": ""
@@ -3438,7 +3438,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2415389",
    "image": "",
    "notes": ""
@@ -3452,7 +3452,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2003,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2417037",
    "image": "",
    "notes": ""
@@ -3466,7 +3466,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2418569",
    "image": "",
    "notes": ""
@@ -3480,7 +3480,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.researchgate.net/publication/10806533_Periocular_injection_of_an_adenoviral_vector_encoding_pigment_epithelium-derived_factor_inhibits_choroidal_neovascularization",
    "image": "",
    "notes": ""
@@ -3494,7 +3494,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2420685",
    "image": "",
    "notes": ""
@@ -3508,7 +3508,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2421839",
    "image": "",
    "notes": ""
@@ -3522,7 +3522,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "http://iovs.arvojournals.org/article.aspx?articleid=2420067",
    "image": "",
    "notes": ""
@@ -3536,7 +3536,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11980881",
    "image": "",
    "notes": ""
@@ -3550,7 +3550,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11867604",
    "image": "",
    "notes": ""
@@ -3564,7 +3564,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2002,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11839592",
    "image": "",
    "notes": ""
@@ -3578,7 +3578,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Case Study",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11727737",
    "image": "",
    "notes": ""
@@ -3592,7 +3592,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11587176",
    "image": "",
    "notes": ""
@@ -3606,7 +3606,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11438478",
    "image": "",
    "notes": ""
@@ -3620,7 +3620,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/11424092",
    "image": "",
    "notes": ""
@@ -3634,7 +3634,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3648,7 +3648,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3662,7 +3662,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 2001,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3676,7 +3676,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 2000,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3690,7 +3690,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1999,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3704,7 +3704,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1997,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.researchgate.net/publication/317755989_Surgical_treatment_of_choroidal_neovascular_membranes_associated_with_angioid_streaks",
    "image": "",
    "notes": ""
@@ -3718,7 +3718,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1997,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.researchgate.net/publication/317756123_Subretinal_endolaser_photocoagulation_'of_a_recurrent_juxtafoveal_neovascular_membrane_in_presumed_ocular_histoplasmosis_syndrome",
    "image": "",
    "notes": ""
@@ -3732,7 +3732,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 1996,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3746,7 +3746,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 1996,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3760,7 +3760,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1995,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3774,7 +3774,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1995,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3788,7 +3788,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1994,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.ncbi.nlm.nih.gov/pubmed/7509327",
    "image": "",
    "notes": ""
@@ -3802,7 +3802,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1993,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3816,7 +3816,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1993,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "https://www.tandfonline.com/doi/abs/10.3109/02713689408999893",
    "image": "",
    "notes": ""
@@ -3830,7 +3830,7 @@ export const pubs = [
    "moreAuthors": true,
    "date": 1992,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3844,7 +3844,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1993,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
@@ -3858,7 +3858,7 @@ export const pubs = [
    "moreAuthors": false,
    "date": 1986,
    "category": "Basic",
-   "type": "Abstract ",
+   "type": "Abstract",
    "link": "",
    "image": "",
    "notes": ""
