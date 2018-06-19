@@ -793,4 +793,22 @@ button.timeEvent.match {
       .mobileText {
           width: 90%;
       }
+
+      .mobileText a , .mobileText a:visited {
+          font-family: 'Karla', sans-serif;
+          font-weight: 700;
+          line-height: 1.25rem;
+          font-weight: 700;
+          font-size: .85rem;
+          color: #4C6ADA;
+          cursor: pointer;
+          text-decoration: underline;
+          padding: 0;
+          margin: 0 0 1rem 0;
+      }
+
+      .mobileText a:hover, .mobileText a:visited:hover {
+          letter-spacing: .05rem;
+          font-style: italic;
+      }
 }
