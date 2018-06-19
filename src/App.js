@@ -8,8 +8,9 @@ import { Timeline } from './Timeline';
 import { TimeEvent } from './TimeEvent';
 import { Summary } from './Summary';
 import { Tags } from './Tags';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { TutorialOverlay } from './TutorialOverlay';
 import { MobileOverlay } from './MobileOverlay';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './App.css';
 
 const timeline = <Timeline />
@@ -25,6 +26,7 @@ const startingState = {
     pub: config.pubs.length,
     initialLoad: true,
     aboutVisible: false,
+    tutorialVisible: true,
 };
 
 const time1 = new TimeEvent({ id: 'sup', children: 'I have content' });
@@ -41,6 +43,7 @@ class App extends Component {
         this.selectCategory = this.selectCategory.bind( this );
         this.getSummary = this.getSummary.bind( this );
         this.showAbout = this.showAbout.bind( this );
+        this.hideTutorial = this.hideTutorial.bind( this );
     }
     filter() {
         const { pubs } = config;
@@ -61,6 +64,10 @@ class App extends Component {
     }
     showAbout() {
         this.setState({ aboutVisible: !this.state.aboutVisible });
+        console.log(this.state);
+    }
+    hideTutorial() {
+        this.setState({ tutorialVisible: false });
         console.log(this.state);
     }
     selectCategory( tag ) {
@@ -89,7 +96,8 @@ class App extends Component {
                     transitionLeaveTimeout={1500}>
                     {items}
                 </ReactCSSTransitionGroup>
-                { MobileOverlay }
+                <TutorialOverlay state={this.state} hideTutorial={this.hideTutorial} />
+                <MobileOverlay />
             </div>
         );
     }

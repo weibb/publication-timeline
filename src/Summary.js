@@ -28,7 +28,7 @@ export class Summary extends Component {
         const summaryLoadClass = this.state.initialLoad === true ? 'initial-load sidebar' : 'sidebar';
         let linkHolder = <div></div>;
         if ( pub.link !== "") {
-          linkHolder = <p><a className={ "summaryLink " + pub.category } href={ pub.link }>Read it Here →</a></p>;
+          linkHolder = <p><a className={ "summaryLink " + pub.category } href={ pub.link } target="_blank">Read it Here →</a></p>;
         }
         return (
             <div className={summaryLoadClass} id="summary">

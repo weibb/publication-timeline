@@ -4788,20 +4788,6 @@ export const pubs = [
    "notes": ""
  },
  {
-   "title": "Natural History of Posterior Vitreous Detachment - An Observational Cross-Sectional Study with Wide-Angle Montaged Optical Coherence Tomography Imaging",
-   "publication": "Ophthalmology ",
-   "author1": "Tsukahara M",
-   "author2": "Mori K",
-   "author3": "Gehlbach PL",
-   "moreAuthors": true,
-   "date": 2018,
-   "category": "Basic",
-   "type": "Original Research",
-   "link": "https://www.ncbi.nlm.nih.gov/pubmed/26349565",
-   "image": "",
-   "notes": ""
- },
- {
    "title": "Robot-Assisted Vitreoretinal Surgery: Current Perspectives (+ Video abstract)",
    "publication": "Robotic Surgery: Research and Reviews ",
    "author1": "Roizenblatt M",
@@ -4882,6 +4868,20 @@ export const pubs = [
    "category": "Basic",
    "type": "Book Chapter",
    "link": "",
+   "image": "",
+   "notes": ""
+ },
+ {
+   "title": "Natural History of Posterior Vitreous Detachment - An Observational Cross-Sectional Study with Wide-Angle Montaged Optical Coherence Tomography Imaging",
+   "publication": "Ophthalmology ",
+   "author1": "Tsukahara M",
+   "author2": "Mori K",
+   "author3": "Gehlbach PL",
+   "moreAuthors": true,
+   "date": 2018,
+   "category": "Basic",
+   "type": "Original Research",
+   "link": "https://www.ncbi.nlm.nih.gov/pubmed/26349565",
    "image": "",
    "notes": ""
  }
