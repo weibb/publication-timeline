@@ -1,6 +1,6 @@
 {
   "name": "publication-timeline",
-  "homepage": "pg-publication-timeline.surge.sh",
+  "homepage": "http://weibb.github.io/publication-timeline",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,13 +9,19 @@
     "react-dom": "^15.6.1",
     "react-imageloader": "^2.1.0",
     "react-scripts": "1.0.11",
-    "react-textfit": "^1.1.0",
-    "react-transition-group": "^2.4.0"
+    "react-textfit": "^1.0.1",
+    "react-transition-group": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "url-loader": "^0.5.9"
   }
 }
