@@ -153,8 +153,6 @@ p {
     height: 100%;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .sidebar {
@@ -640,7 +638,6 @@ button.timeEvent.match {
     align-items: center;
     visibility: visible;
     padding: 5rem;
-    overflow-y: hidden;
   }
 
 .tutorialMessage {
@@ -735,207 +732,40 @@ button.timeEvent.match {
     width: 80%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     #mobileScreen {
         position: absolute;
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, .5);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        visibility: visible;
-        padding: 5rem;
-      }
-
-    #mobileScreenbg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: url(./media/staticbg.gif);
-        opacity: .9;
-        z-index: 0;
-    }
-
-    .mobileMessage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80vmin;
-        min-width: 350px;
-        padding: 3rem;
-        background-color: rgba(255, 255, 255, 1);
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
-        border-radius: 30px; /* future proofing */
-        -khtml-border-radius: 30px; /* for old Konqueror browsers */
-        z-index: 1;
-      }
-
-      .mobileMessage p {
-         color: rgba(0, 0, 0, 1);
-         padding: 0;
-         margin-bottom: 1rem;
-      }
-
-      .mobileMessage img {
-          max-width: 100%;
-          max-height: 100%;
-          width: 70%;
-      }
-
-      .mobileHeader {
-          padding-bottom: 2rem;
-      }
-
-      .mobileText {
-          width: 90%;
-      }
-
-      .mobileText a , .mobileText a:visited {
-          font-family: 'Karla', sans-serif;
-          font-weight: 700;
-          line-height: 1.25rem;
-          font-weight: 700;
-          font-size: .85rem;
-          color: #4C6ADA;
-          cursor: pointer;
-          text-decoration: underline;
-          padding: 0;
-          margin: 0 0 1rem 0;
-      }
-
-      .mobileText a:hover, .mobileText a:visited:hover {
-          letter-spacing: .05rem;
-          font-style: italic;
-      }
-}
-
-@media ( max-height: 768px ) {
-    #mobileScreen {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, .5);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        visibility: visible;
-        padding: 5rem;
-      }
-
-    #mobileScreenbg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: url(./media/staticbg.gif);
-        opacity: .9;
-        z-index: 0;
-    }
-
-    .mobileMessage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80vmin;
-        min-width: 350px;
-        padding: 3rem;
-        background-color: rgba(255, 255, 255, 1);
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
-        border-radius: 30px; /* future proofing */
-        -khtml-border-radius: 30px; /* for old Konqueror browsers */
-        z-index: 1;
-      }
-
-      .mobileMessage p {
-         color: rgba(0, 0, 0, 1);
-         padding: 0;
-         margin-bottom: 1rem;
-      }
-
-      .mobileMessage img {
-          max-width: 100%;
-          max-height: 100%;
-          width: 70%;
-      }
-
-      .mobileHeader {
-          padding-bottom: 2rem;
-      }
-
-      .mobileText {
-          width: 90%;
-      }
-
-      .mobileText a , .mobileText a:visited {
-          font-family: 'Karla', sans-serif;
-          font-weight: 700;
-          line-height: 1.25rem;
-          font-weight: 700;
-          font-size: .85rem;
-          color: #4C6ADA;
-          cursor: pointer;
-          text-decoration: underline;
-          padding: 0;
-          margin: 0 0 1rem 0;
-      }
-
-      .mobileText a:hover, .mobileText a:visited:hover {
-          letter-spacing: .05rem;
-          font-style: italic;
-      }
-}
-
-@media ( max-height: 670px ) {
-    #mobileScreen {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: auto;
-        width: 100%;
-        background-color: rgba(0, 0, 0, .5);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        visibility: visible;
-        padding: 5rem;
-      }
-
-    #mobileScreenbg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: url(./media/staticbg.gif);
-        opacity: .9;
-        z-index: 0;
-    }
-
-    .mobileMessage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80vmin;
-        min-width: 350px;
-        min-height: 540px;
         height: 100vh;
-        overflow-y: scroll;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+        padding: 5rem;
+      }
+
+    #mobileScreenbg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: url(./media/staticbg.gif);
+        opacity: .9;
+        z-index: 0;
+    }
+
+    .mobileMessage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vmin;
+        min-width: 350px;
         padding: 3rem;
         background-color: rgba(255, 255, 255, 1);
         -moz-border-radius: 30px;
@@ -954,7 +784,6 @@ button.timeEvent.match {
       .mobileMessage img {
           max-width: 100%;
           max-height: 100%;
-          width: 70%;
       }
 
       .mobileHeader {
