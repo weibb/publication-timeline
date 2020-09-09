@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { config } from './config';
-import { Textfit } from 'react-textfit';
-import ImageLoader from 'react-imageloader';
 
-function preloader() {
-  return <img src="2.png" />;
-}
 
 export class Tags extends Component {
     constructor( props ) {
@@ -28,12 +23,12 @@ export class Tags extends Component {
         const aboutTag = this.props.aboutVisible === true ? 'about-show' : 'about-hide';
         const aboutButtonText = this.props.aboutVisible === false ? '⚬ About' : '✖ Close';
         const aboutLinks = config.author.links.map((link, i) => (
-            <p><a href={link.ref}> {link.text} </a><br /></p>
-        ));
+            <span key={i}><a href={link.ref} target="_blank"> {link.text} </a><br /></span>
+          ));
         return (
             <div className="sidebar" id="profiler">
                 <div id="person" className="leftside wordwrap">
-                    <img alt='focus image' src={config.author.image} />
+                    <img alt="{categoryMatch}" src={config.author.image} />
                         <h2>{config.author.displayName}</h2>
                         <h3>{config.author.degrees}</h3>
                         <h4>{config.author.title} <br />
@@ -79,7 +74,7 @@ export class Tags extends Component {
                 </ul>
                 <div id="about" className={aboutTag}>
                     <p>{config.author.summary}</p>
-                    {aboutLinks} <br />
+                    <p>{aboutLinks}</p>
                 </div>
             </div>
 

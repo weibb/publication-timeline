@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export class TutorialOverlay extends Component {
     constructor( props ) {
@@ -13,14 +12,16 @@ export class TutorialOverlay extends Component {
             <div id="tutorialScreen" className={tutorialClose}>
                 <div className="tutorialMessage">
                     <div className="tutorialHeader">
-                      <img src={require('./media/tutorial.gif')} />
+                      <img src={require('./media/tutorial.gif')} alt="Peter Gehlbach's Publication Timeline" />
                     </div>
-                    <p className="mobileText">
+                    <div className="mobileText">
                         <h1>Peter Gehlbach's Publication Timeline</h1>
-                        &bull; Click on a dot to see publication entry.<br />
-                        &bull; Entries are organized by date.<br />
-                        &bull; Narrow your search with clicking on tags.<br />
-                    </p>
+                        <p>
+                            &bull; Click on a dot to see publication entry.<br />
+                            &bull; Entries are organized by date.<br />
+                            &bull; Narrow your search with clicking on tags.<br />
+                        </p>
+                    </div>
                     <button
                         id="tutorial-close"
                         onClick={( e ) => {

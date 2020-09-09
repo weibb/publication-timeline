@@ -14,7 +14,11 @@ export const config = {
         links: [
             {
                 text: 'Professional Site →',
-                ref: 'https://weibb.github.io/pgeh-site/',
+                ref: 'https://petergehlbach.com/',
+            },
+            {
+                text: 'News & Blog →',
+                ref: 'https://medium.com/peter-l-gehlbach-md-phd',
             },
             {
                 text: 'Johns Hopkins Profile →',

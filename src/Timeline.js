@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { TimeEvent } from './TimeEvent';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export class Timeline extends Component {
     constructor( props ) {
@@ -29,7 +28,7 @@ export class Timeline extends Component {
   }
     render(){
             const pubs = this.props.matches;
-            const timeline = [];
+            const timelineContent = [];
             const ruler = [];
             const d = new Date();
             for( let year = 1992; year <= d.getFullYear(); year += 1){
@@ -37,8 +36,8 @@ export class Timeline extends Component {
                 pubs.map( event =>
                     {
                         const match = event.match ? true : false;
-                        if (event.date == year){
-                            pubsByYear.push(<TimeEvent key={event.id} id={(event.id + 1).toString()} key={event.id + 1} match={match} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
+                        if (event.date === year){
+                            pubsByYear.push(<TimeEvent key={ event.id + 1} id={(event.id + 1).toString()} match={match} className='timeEvent' getSummary={this.getSummary} getOldSummary={this.getOldSummary} />)
                         }
                     }
                 );
@@ -46,7 +45,7 @@ export class Timeline extends Component {
                     {pubsByYear}
                 </div>
                 // console.log(pubsByYear);
-                timeline.push(yearColumn);
+                timelineContent.push(yearColumn);
                 const name = year % 10 === 0 ? year.toString() : '';
                 const tick = year % 10 === 0 ? 'bigTick' : 'tick';
                 const yearMeasure = <div className='measure measure{year}' key={year}>
@@ -57,11 +56,11 @@ export class Timeline extends Component {
             }
 
 
-            return (<div className="container" className='timeline'>
-                        <div id='timeline-inner'>
-                            {timeline}
+            return (<div className="container timeline-display">
+                        <div id="timeline-inner">
+                            {timelineContent}
                         </div>
-                        <div id='ruler'>
+                        <div id="ruler">
                             {ruler}
                         </div>
                     </div>

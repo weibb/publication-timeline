@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import _ from 'lodash';
 
-import logo from './logo.svg';
 import { config } from './config';
 import { Timeline } from './Timeline';
 import { TimeEvent } from './TimeEvent';
@@ -13,7 +10,6 @@ import { MobileOverlay } from './MobileOverlay';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './App.css';
 
-const timeline = <Timeline />
 const startingState = {
     config: config,
     minYear: 1970,
@@ -49,8 +45,8 @@ class App extends Component {
         const { pubs } = config;
         const { type, category } = this.state;
         pubs.map (( pub ) => {
-            if ((  pub.type == type || type === 'all' ) &&
-            ( pub.category == category || category === 'all' )) {
+            if ((  pub.type === type || type === 'all' ) &&
+            ( pub.category === category || category === 'all' )) {
                 pub.match = true;
             }
             else {

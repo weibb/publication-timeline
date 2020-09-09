@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export class TimeEvent extends Component {
     constructor( props ) {
@@ -17,7 +16,6 @@ export class TimeEvent extends Component {
                 <button
                     className={className}
                     onClick={( e ) => {
-                        const self = this;
                         this.getSummary(this.props.id);
 
                     }}
