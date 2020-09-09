@@ -30,8 +30,12 @@ export class Timeline extends Component {
             const pubs = this.props.matches;
             const timelineContent = [];
             const ruler = [];
+<<<<<<< HEAD
             const d = new Date();
             for( let year = 1992; year <= d.getFullYear(); year += 1){
+=======
+            for( let year = 1970; year <= 2018; year += 1){
+>>>>>>> Update readme; style About; make author generic
                 const pubsByYear = [];
                 pubs.map( event =>
                     {

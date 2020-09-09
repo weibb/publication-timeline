@@ -5,7 +5,7 @@ for(let i = 0; i < pubs.length; i += 1) {
 }
 export const config = {
     author: {
-        displayName: 'Peter L Gehlbach',
+        displayName: 'Jane Doe',
         degrees: 'MD, PhD',
         title: 'Professor of Othamology',
         institution: 'Johns Hopkins University',
